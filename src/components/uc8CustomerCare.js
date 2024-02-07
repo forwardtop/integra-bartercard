@@ -241,7 +241,7 @@ const Uc8CustomerCare = () => {
           </div>
           
         </div>
-        <div className="bg-[#A020F0] h-16 flex items-center justify-end w-9/10 lg:w-2/3">
+        <div className="bg-[#A020F0] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
         <p className="text-white mr-24">"Future Technology Today"</p>
       </div>
       </div>
