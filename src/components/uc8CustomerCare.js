@@ -209,7 +209,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/voicePlan.png" alt=""></img>
+                    <img src="/images/voice.png" alt=""></img>
                   </div>
                   <p className="text-xs text-center">
                     Choose Your<br></br>Voice Plan
