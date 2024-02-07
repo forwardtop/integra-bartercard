@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'bradhitc';
+    src: url('/BRADHITC.TTF') format('truetype'); 
+  }
+  
+  @font-face {
+    font-family: 'gothic';
+    src: url('/GOTHIC.TTF') format('truetype');
+  }
+  .custom-text {
+    font-family: 'bradhitc', sans-serif;
+  }

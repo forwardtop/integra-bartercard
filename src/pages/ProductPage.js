@@ -2,15 +2,14 @@ import React from 'react';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import BreadCrumbsBar from '../components/breadCrumbsBar';
-import ProductHero from '../components/productHero';
-import ProductContent from '../components/productContent';
+import Uc8AI from '../components/uc8AI';
+
 function ProductPage() {
     return (
       <div>
         <Header />
         <BreadCrumbsBar />
-        <ProductHero />
-        <ProductContent />
+        <Uc8AI />
         <Footer />
       </div>
     );

@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@material-tailwind/react";
 const BreadCrumbsBar = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
+  console.log(location.pathname)
   const pageNames = {
     "products": "Products",
     "watchDemo": "Watch Demo",
