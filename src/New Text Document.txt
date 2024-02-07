@@ -1,0 +1,26 @@
+import React from 'react';
+
+function Header() {
+  return (
+    <div className="bg-[#0094b3] p-4 flex justify-between items-center">
+      {/* Left-aligned logo */}
+      <div className="flex items-center">
+        <img
+          src="/images/system_logo.png"
+          alt="Logo"
+          className="h-16 w-full mr-2"
+        />
+      </div>
+
+      {/* Right-aligned menus */}
+      <div className="space-x-4 bg-white border border-solid rounded-full p-2 ">
+        <a className='mx-2' href="/">Welcome, <span className='font-semibold'>Chris</span></a><span className='text-red-500'>|</span>
+        <a className='text-red-500' href="/">Admin</a><span className='text-red-500'>|</span>
+        <a className='text-red-500' href="/">My Preferences</a><span className='text-red-500'>|</span>
+        <a className='text-red-500' href="/">Log Out</a>
+      </div>
+    </div>
+  );
+}
+
+export default Header;
