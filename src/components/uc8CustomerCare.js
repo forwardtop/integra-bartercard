@@ -121,7 +121,7 @@ const Uc8CustomerCare = () => {
               </div>
               <div className="flex flex-row">
                 <div className="px-1">
-                  <img src="/images/callingFeatures.png" alt=""></img>
+                  <img src="/images/businessFeatures.png" alt=""></img>
                 </div>
                 <div className="w-[30%] p-1">
                   <div className="border border-solid border-gray-300">
@@ -165,7 +165,7 @@ const Uc8CustomerCare = () => {
               </div>
               <div className="flex md:flex-row">
                 <div className="px-1">
-                  <img src="/images/callCentre.png" alt=""></img>
+                  <img src="/images/callcentre.png" alt=""></img>
                 </div>
                 <div className="w-[30%] p-1">
                   <div className="border border-solid border-gray-300">
