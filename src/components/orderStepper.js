@@ -3,10 +3,10 @@ import Step1 from "./../components/step1";
 import Step2 from "./../components/step2";
 import Step3 from "./../components/step3";
 import { AuthContext } from "../config/AuthContext";
-import axios from "axios";
+// import axios from "axios";
 import Step4 from "../components/step4";
-import Footer from "../components/footer";
 import Equipment from "./equipment";
+import SelectTerm from "./selectTerm";
 
 const steps = [
   { id: 1, component: Step1 },
@@ -17,61 +17,30 @@ const steps = [
 const OrderProcess = () => {
   const [step, setStep] = useState(1);
 
-  const { email } = useContext(AuthContext);
-  const { firstName } = useContext(AuthContext);
-  const { lastName } = useContext(AuthContext);
-  const { phoneNumber } = useContext(AuthContext);
-  const { country } = useContext(AuthContext);
-  const { primary } = useContext(AuthContext);
-  const { company } = useContext(AuthContext);
-  const { employee } = useContext(AuthContext);
-  const { isValidEmail } = useContext(AuthContext);
+//   const { email } = useContext(AuthContext);
+//   const { firstName } = useContext(AuthContext);
+//   const { lastName } = useContext(AuthContext);
+//   const { phoneNumber } = useContext(AuthContext);
+//   const { country } = useContext(AuthContext);
+//   const { primary } = useContext(AuthContext);
+//   const { company } = useContext(AuthContext);
+//   const { employee } = useContext(AuthContext);
+//   const { isValidEmail } = useContext(AuthContext);
   const { setShowValidationMessage } = useContext(AuthContext);
   const { total } = useContext(AuthContext);
   const { receptionPhone } = useContext(AuthContext);
   const { desktopPhone } = useContext(AuthContext);
   const { cordlessPhone } = useContext(AuthContext);
   const { softPhone } = useContext(AuthContext);
+  const { terms } = useContext(AuthContext);
+  const { upfrontCost } = useContext(AuthContext);
 
-
+console.log(terms);
 
 
   const handleNext = () => {
-    // if (email.trim().length === 0) {
-    //   setIsValidEmail(false);
-    // }
     setShowValidationMessage(true);
-
-    if (step < steps.length) {
-      console.log("validEmail : ", isValidEmail);
-      if (isValidEmail && email.trim().length !== 0) {
-        setStep(step + 1);
-        console.log(step);
-      }
-    }
-    if (step === steps.length) {
-      const data = {
-        email: email,
-        firstName: firstName,
-        lastName: lastName,
-        phoneNumber: phoneNumber,
-        country: country,
-        primary: primary,
-        company: company,
-        employee: employee,
-      };
-      console.log("data:", data);
-
-      axios
-        .post("https://uc8.au/email/index.php", data)
-        .then((res) => {
-          console.log("result:", res.data);
-        })
-        .catch((error) => {
-          console.error("Error sending data:", error);
-        });
-      setStep(4);
-    }
+    setStep(step + 1);
   };
 
   const handlePrev = () => {
@@ -87,7 +56,7 @@ const OrderProcess = () => {
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row h-screen">
+      <div className="flex flex-col lg:flex-row">
         <div className="text-center p-4 md:p-12 bg-gray-100">
           <div className="flex items-center justify-center">
             <h1 className=" text-2xl md:text-4xl font-semibold text-[#a020ef]">
@@ -106,8 +75,8 @@ const OrderProcess = () => {
             </div>
             <div className="space-y-2">
               <h2 className="text-2xl text-[#a020ef]">Upfront Cost</h2>
-              <p>Terms = </p>
-              <p>Upfront Cost = </p>
+              <p>Terms = <span className="text-2xl text-[#a020ef] font-bold">{terms}</span> </p>
+              <p>Upfront Cost =<span className="text-2xl text-[#a020ef] font-bold">{upfrontCost}</span>  </p>
             </div>
             <div className="space-y-2">
               <h2 className="text-2xl text-[#a020ef]">Monthly Cost</h2>
@@ -120,7 +89,7 @@ const OrderProcess = () => {
         </div>
         {/* Section 2: Quote Request Form */}
         <div
-          className="lg:w-3/4 flex flex-col items-center mx-5 lg:mx-auto mt-24"
+          className="flex flex-col items-center mx-5 lg:mx-auto mt-12"
           onKeyDown={handleKeyPress}
         >
           <div
@@ -139,7 +108,7 @@ const OrderProcess = () => {
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {step === 2 && <Step2 />}
+            {step === 2 && <SelectTerm />}
           </div>
           <div
             className={`transition-transform duration-500 ${
@@ -196,7 +165,6 @@ const OrderProcess = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

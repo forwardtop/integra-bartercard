@@ -1,5 +1,5 @@
 // import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../config/AuthContext";
 
 export default function Equipment() {
@@ -32,13 +32,13 @@ export default function Equipment() {
   const count = 4;
   const [nTel, setTel] = useState(Array(count).fill(0));
 
-  const total = nTel.reduce((acc, curr) => acc + curr, 0);
-
-  setTotal(total);
-  setReceptionPhone(nTel[0]);
-  setDesktopPhone(nTel[1]);
-  setCordlessPhone(nTel[2]);
-  setSoftPhone(nTel[3]);
+  useEffect(() => {
+    setTotal(nTel.reduce((acc, curr) => acc + curr, 0));
+    setReceptionPhone(nTel[0]);
+    setDesktopPhone(nTel[1]);
+    setCordlessPhone(nTel[2]);
+    setSoftPhone(nTel[3]);
+  }, [nTel, setTotal, setReceptionPhone, setDesktopPhone, setCordlessPhone, setSoftPhone]);
 
   const handleDecrement = (index) => {
     setTel((prev) => {
@@ -56,47 +56,9 @@ export default function Equipment() {
       return updatedTel;
     });
   };
-  // const data = [
-  //   {
-  //     contactTerm: "Month to Month",
-  //     setUpCost: "$249",
-  //     totalSeats: "10",
-  //     upfrontCost: "$2490",
-  //   },
-  //   {
-  //     contactTerm: "12 Months",
-  //     setUpCost: "$199",
-  //     totalSeats: "10",
-  //     upfrontCost: "$1990",
-  //   },
-  //   {
-  //     contactTerm: "24 Months",
-  //     setUpCost: "$149",
-  //     totalSeats: "10",
-  //     upfrontCost: "$1490",
-  //   },
-  //   {
-  //     contactTerm: "36 Months",
-  //     setUpCost: "$99",
-  //     totalSeats: "10",
-  //     upfrontCost: "$990",
-  //   },
-  //   {
-  //     contactTerm: "48 Months",
-  //     setUpCost: "$49",
-  //     totalSeats: "10",
-  //     upfrontCost: "$490",
-  //   },
-  //   {
-  //     contactTerm: "60 Months",
-  //     setUpCost: "$0",
-  //     totalSeats: "10",
-  //     upfrontCost: "$0",
-  //   },
-  // ];
   return (
     <div className="bg-white px-12">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto sm:px-1 lg:max-w-7xl lg:px-8">
         <div className="flex justify-center items-center">
           <div className="w-10 h-10 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
             <h1 className="font-extrabold font-mono text-sm  md:text-xl lg:text-2xl">
@@ -147,103 +109,10 @@ export default function Equipment() {
           </div>
           <div className="w-full sm:w-1/6 flex flex-col justify-end text-center">
             <div className="text-red-500 text-2xl font-extrabold">
-              ={total} Seats
+              ={nTel.reduce((acc, curr) => acc + curr, 0)} Seats
             </div>
           </div>
         </div>
-        {/* <div className="mt-5 border-t border-gray-300"></div>
-        <div className="flex justify-center items-center py-10">
-          <div className="w-10 h-10 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
-            <h1 className="font-extrabold font-mono text-sm  md:text-xl lg:text-2xl">
-              2
-            </h1>
-          </div>
-          <div className="text-2xl text-gray-500 font-semibold">
-            Select your contract term
-          </div>
-        </div>
-        <div className="flex flex-col w-4/5">
-          <table className="min-w-full">
-            <thead>
-              <tr>
-                <th className=""></th>
-                <th className="text-red-500">
-                  Contact Term<p>&nbsp;</p>
-                </th>
-                <th className="text-red-500">
-                  Set up Cost
-                  <p className="text-gray-500 font-normal">Per Seat</p>
-                </th>
-                <th className="text-red-500">
-                  Total Seats<p className="text-gray-500 font-normal">Qty</p>
-                </th>
-                <th className="text-red-500">
-                  Set up
-                  <p className="text-gray-500 font-normal">Upfront Cost</p>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((row, index) => (
-                <tr key={index} className="h-12">
-                  <td className="text-center text-red-500">
-                    <div
-                      className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                      } h-12 flex items-center justify-center`}
-                    >
-                      O
-                    </div>
-                  </td>
-                  <td className="text-center text-gray-500">
-                    <div
-                      className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                      } h-12 flex items-center justify-center`}
-                    >
-                      {row.contactTerm}
-                    </div>
-                  </td>
-                  <td className="text-center text-gray-500">
-                    <div
-                      className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                      } h-12 flex items-center justify-center`}
-                    >
-                      {row.setUpCost}
-                    </div>
-                  </td>
-                  <td className="text-center text-red-500">
-                    <div
-                      className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                      } h-12 flex items-center justify-center`}
-                    >
-                      {row.totalSeats}
-                    </div>
-                  </td>
-                  <td className="text-center text-gray-500">
-                    <div
-                      className={`${
-                        index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                      } h-12 flex items-center justify-center`}
-                    >
-                      {row.upfrontCost}
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="mt-5 flex justify-center">
-          <button
-            onClick={() => history.push(`/contact`)}
-            className="flex items-center justify-center w-44 h-10 rounded-full border bg-red-500 text-white"
-          >
-            Check Out
-          </button>
-        </div> */}
       </div>
     </div>
   );

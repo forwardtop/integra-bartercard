@@ -27,6 +27,8 @@ export const AuthProvider = ({ children }) => {
   const [desktopPhone, setDesktopPhone] = useState("");
   const [cordlessPhone, setCordlessPhone] = useState("");
   const [softPhone, setSoftPhone] = useState("");
+  const [terms, setTerms] = useState("");
+  const [upfrontCost, setUpfrontCost] = useState("");
   
  
 
@@ -71,6 +73,10 @@ export const AuthProvider = ({ children }) => {
     setCordlessPhone,
     softPhone,
     setSoftPhone,
+    terms,
+    setTerms,
+    upfrontCost,
+    setUpfrontCost
   };
   return  <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>;
 };
