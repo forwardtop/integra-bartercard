@@ -5,7 +5,7 @@ const GetConnected = () => {
     <div>
       <div className="lg:flex flex-col items-center m-auto pt-5">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[27vh] lg:w-full ml-24"
+          className="lg:flex justify-between bg-cover bg-center h-[27vh] lg:w-full lg:ml-24"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
