@@ -5,6 +5,7 @@ import BreadCrumbsBar from '../components/breadCrumbsBar';
 import Uc8AI from '../components/uc8AI';
 import Uc8CustomerCare from '../components/uc8CustomerCare';
 import About from '../components/about';
+import GetConnected from '../components/getConnected';
 
 function ProductPage() {
     return (
@@ -14,6 +15,7 @@ function ProductPage() {
         <Uc8AI />
         <Uc8CustomerCare />
         <About />
+        <GetConnected />
         <Footer />
       </div>
     );
