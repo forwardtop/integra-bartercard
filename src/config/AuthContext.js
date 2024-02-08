@@ -21,7 +21,14 @@ export const AuthProvider = ({ children }) => {
   const [isValidPhoneNumber, setIsValidPhoneNumber] = useState("");
   const [isFormValid, setIsFormValid] = useState("");
   const [showValidationMessage, setShowValidationMessage] = useState(false);
-
+  const [total, setTotal] = useState("");
+  const [nTel, setNTel] = useState("");
+  const [receptionPhone, setReceptionPhone] = useState("");
+  const [desktopPhone, setDesktopPhone] = useState("");
+  const [cordlessPhone, setCordlessPhone] = useState("");
+  const [softPhone, setSoftPhone] = useState("");
+  
+ 
 
   const contextValue = {
     email,
@@ -51,7 +58,19 @@ export const AuthProvider = ({ children }) => {
     isFormValid,
     setIsFormValid,
     showValidationMessage,
-    setShowValidationMessage
+    setShowValidationMessage,
+    total,
+    setTotal,
+    nTel,
+    setNTel,
+    receptionPhone,
+    setReceptionPhone,
+    desktopPhone,
+    setDesktopPhone,
+    cordlessPhone,
+    setCordlessPhone,
+    softPhone,
+    setSoftPhone,
   };
   return  <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>;
 };

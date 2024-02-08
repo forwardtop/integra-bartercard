@@ -1,8 +1,16 @@
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { useState } from "react";
+// import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useContext, useState } from "react";
+import { AuthContext } from "../config/AuthContext";
 
 export default function Equipment() {
-  const history = useHistory();
+  // const history = useHistory();
+  const {
+    setTotal,
+    setReceptionPhone,
+    setCordlessPhone,
+    setDesktopPhone,
+    setSoftPhone,
+  } = useContext(AuthContext);
   const cardsData = [
     {
       title: "Reception Phone",
@@ -24,6 +32,14 @@ export default function Equipment() {
   const count = 4;
   const [nTel, setTel] = useState(Array(count).fill(0));
 
+  const total = nTel.reduce((acc, curr) => acc + curr, 0);
+
+  setTotal(total);
+  setReceptionPhone(nTel[0]);
+  setDesktopPhone(nTel[1]);
+  setCordlessPhone(nTel[2]);
+  setSoftPhone(nTel[3]);
+
   const handleDecrement = (index) => {
     setTel((prev) => {
       const updatedTel = [...prev];
@@ -33,7 +49,6 @@ export default function Equipment() {
       return updatedTel;
     });
   };
-
   const handleIncrement = (index) => {
     setTel((prev) => {
       const updatedTel = [...prev];
@@ -41,45 +56,44 @@ export default function Equipment() {
       return updatedTel;
     });
   };
-
-  const data = [
-    {
-      contactTerm: "Month to Month",
-      setUpCost: "$249",
-      totalSeats: "10",
-      upfrontCost: "$2490",
-    },
-    {
-      contactTerm: "12 Months",
-      setUpCost: "$199",
-      totalSeats: "10",
-      upfrontCost: "$1990",
-    },
-    {
-      contactTerm: "24 Months",
-      setUpCost: "$149",
-      totalSeats: "10",
-      upfrontCost: "$1490",
-    },
-    {
-      contactTerm: "36 Months",
-      setUpCost: "$99",
-      totalSeats: "10",
-      upfrontCost: "$990",
-    },
-    {
-      contactTerm: "48 Months",
-      setUpCost: "$49",
-      totalSeats: "10",
-      upfrontCost: "$490",
-    },
-    {
-      contactTerm: "60 Months",
-      setUpCost: "$0",
-      totalSeats: "10",
-      upfrontCost: "$0",
-    },
-  ];
+  // const data = [
+  //   {
+  //     contactTerm: "Month to Month",
+  //     setUpCost: "$249",
+  //     totalSeats: "10",
+  //     upfrontCost: "$2490",
+  //   },
+  //   {
+  //     contactTerm: "12 Months",
+  //     setUpCost: "$199",
+  //     totalSeats: "10",
+  //     upfrontCost: "$1990",
+  //   },
+  //   {
+  //     contactTerm: "24 Months",
+  //     setUpCost: "$149",
+  //     totalSeats: "10",
+  //     upfrontCost: "$1490",
+  //   },
+  //   {
+  //     contactTerm: "36 Months",
+  //     setUpCost: "$99",
+  //     totalSeats: "10",
+  //     upfrontCost: "$990",
+  //   },
+  //   {
+  //     contactTerm: "48 Months",
+  //     setUpCost: "$49",
+  //     totalSeats: "10",
+  //     upfrontCost: "$490",
+  //   },
+  //   {
+  //     contactTerm: "60 Months",
+  //     setUpCost: "$0",
+  //     totalSeats: "10",
+  //     upfrontCost: "$0",
+  //   },
+  // ];
   return (
     <div className="bg-white px-12">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -101,7 +115,7 @@ export default function Equipment() {
                   key={index}
                   className="p-4 flex flex-col items-center border border-solid  rounded-xl  shadow-xl shadow-gray-300 hover:shadow-gray-500 hover:duration-500"
                 >
-                  <div className="text-base text-center bg-red-500 border rounded-full py-2 px-4 text-white h-6 leading-[13px] flex items-center ">
+                  <div className="text-sm text-center bg-red-500 border rounded-full py-2 px-4 text-white h-10 leading-[13px] flex items-center ">
                     {card.title}
                   </div>
                   <img
@@ -109,7 +123,7 @@ export default function Equipment() {
                     alt={card.title}
                     className="w-32 h-32 object-contain mb-4"
                   />
-                  <div className="flex justify-between items-center w-1/2 border border-solid border-gray-300 rounded-2xl">
+                  <div className="flex justify-between items-center border border-solid border-gray-300 rounded-2xl">
                     <button
                       onClick={() => handleDecrement(index)}
                       className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-500 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"
@@ -133,11 +147,11 @@ export default function Equipment() {
           </div>
           <div className="w-full sm:w-1/6 flex flex-col justify-end text-center">
             <div className="text-red-500 text-2xl font-extrabold">
-              ={nTel[0] + nTel[1] + nTel[2] + nTel[3]} Seats{" "}
+              ={total} Seats
             </div>
           </div>
         </div>
-        <div className="mt-5 border-t border-gray-300"></div>
+        {/* <div className="mt-5 border-t border-gray-300"></div>
         <div className="flex justify-center items-center py-10">
           <div className="w-10 h-10 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
             <h1 className="font-extrabold font-mono text-sm  md:text-xl lg:text-2xl">
@@ -229,7 +243,7 @@ export default function Equipment() {
           >
             Check Out
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

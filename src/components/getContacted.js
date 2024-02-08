@@ -147,7 +147,7 @@ export default function GetContacted() {
     }
   };
   return (
-    <div className="isolate bg-white px-6 py-12 sm:py-10 lg:px-8">
+    <div className="isolate bg-white px-6 sm:py-10 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         {/* <h2 className="text-3xl  tracking-tight text-red-600 sm:text-4xl">5. Check Out</h2> */}
       </div>

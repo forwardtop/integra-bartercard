@@ -17,6 +17,7 @@ const BreadCrumbsBar = () => {
     "shop": "Shop",
     "pricing": "Pricing & Plans",
     "contact": "Contact Us",
+    "order-process": "Order Process",
     // Add more as needed
   };
 

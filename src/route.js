@@ -25,6 +25,8 @@ import HardwarePage from './pages/HardwarePage';
 import SolutionPage from './pages/SolutionPage';
 import WhyPage from './pages/WhyPage';
 import FAQPage from './pages/FAQPage';
+import OrderProcess from './pages/OrderProcessPage';
+
 
   const Routes = () => {
     return (
@@ -54,6 +56,7 @@ import FAQPage from './pages/FAQPage';
         <Route path="/products/callRecording" component={CallRecordingPage} />
         <Route path="/products/hardware" component={HardwarePage} />
         <Route path="/products" component={ProductPage} />
+        <Route path="/order-process" component={OrderProcess} />
       </Switch>
     );
   };
