@@ -51,7 +51,7 @@ export default function SelectTerm() {
     <div className="bg-white px-12">
       <div className="sm:px-6 lg:px-8 lg:flex flex-col">
         <div className="flex justify-center items-center py-10">
-          <div className="w-12 h-10 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
+          <div className="w-12 h-12 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
             <h1 className="font-extrabold font-mono text-sm  md:text-xl lg:text-2xl">
               2
             </h1>

@@ -24,7 +24,7 @@ const Step3 = () => {
   return (
     <div className='sticky top-0'>
       <div className="text-center">
-        <h2 className="text-5xl font-semibold mb-4">Request quote</h2>
+        <h2 className="text-5xl font-semibold mb-4 text-[#a020ef]">Request quote</h2>
         <p className="text-xl p-10">Tell us about your company</p>
       </div>
       {/* Add Step 1 content here */}

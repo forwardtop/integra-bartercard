@@ -5,7 +5,7 @@ const About = () => {
     <div>
       <div className="lg:flex flex-col items-center m-auto pt-5">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[27vh] w-9/10 lg:w-2/3"
+          className="lg:flex justify-between bg-cover bg-center h-[14vh] w-9/10 lg:w-2/3"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
@@ -14,9 +14,9 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-9/10 lg:w-2/3">
           <div className="lg:w-1/2 px-12">
-            <div className="flex flex-col mt-[-100px]">
+            <div className="flex flex-col">
               <div className="flex justify-start items-center">
-                <img src="/images/what.png" alt=""></img>
+                <img src="/images/voip.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">What is VOIP?</h2>
               </div>
               <div className="mt-2">
@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className="flex flex-col mt-5">
               <div className="flex justify-start items-center">
-                <img src="/images/why.png" alt=""></img>
+                <img src="/images/why.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">Why UC8</h2>
               </div>
               <div className="mt-2">
@@ -47,9 +47,9 @@ const About = () => {
             </div>
           </div>
           <div className="lg:w-1/2 px-12">
-            <div className="flex flex-col lg:-mt-32">
+            <div className="flex flex-col">
               <div className="flex justify-start items-center">
-                <img src="/images/benefits.png" alt=""></img>
+                <img src="/images/benefits.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">UC8 Benefits</h2>
               </div>
               <div className="mt-2">
@@ -76,7 +76,7 @@ const About = () => {
               <div className="lg:w-1/2">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/saving.png" alt=""></img>
+                    <img src="/images/saving.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <h5 className="text-sm font-bold mb-3">Saving</h5>
                   <p className="text-xs">
@@ -94,7 +94,7 @@ const About = () => {
               <div className="lg:w-1/2">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/multisite.png" alt=""></img>
+                    <img src="/images/multi.svg" className="h-10" alt=""></img>
                   </div>
                   <h5 className="text-sm font-bold mb-3">Multi-site</h5>
                   <p className="text-xs px-3">
@@ -110,7 +110,7 @@ const About = () => {
             </div>
             <div className="flex flex-col mt-5">
               <div className="flex justify-start items-center">
-                <img src="/images/howitworks.png" alt=""></img>
+                <img src="/images/howitworks.svg" className="w-10 h-10" alt=""></img>
                 <h2 className="text-xl font-bold px-3">How Does It Work?</h2>
               </div>
               <div className="mt-2">
@@ -125,8 +125,8 @@ const About = () => {
           </div>
         </div>
         
-        <div className="bg-[#A020F0] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
-          <p className="text-white mr-24">"Future Technology Today"</p>
+        <div className="bg-[#b11116] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
+          <p className="text-white mr-24 font-bradhitc font-bold">"Future Technology Today"</p>
         </div>
       </div>
     </div>

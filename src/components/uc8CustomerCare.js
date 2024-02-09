@@ -5,7 +5,7 @@ const Uc8CustomerCare = () => {
     <div>
       <div className="lg:flex flex-col items-center m-auto pt-5">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[27vh] w-9/10 lg:w-2/3"
+          className="lg:flex justify-between bg-cover bg-center h-[15vh] w-9/10 lg:w-2/3"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
@@ -21,9 +21,9 @@ const Uc8CustomerCare = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-9/10 lg:w-2/3">
           <div className="lg:w-1/2 px-12">
-            <div className="flex flex-col lg:mt-[-100px]">
+            <div className="flex flex-col">
               <div className="flex justify-start items-center">
-                <img src="/images/support.png" alt=""></img>
+                <img src="/images/support.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">Support</h2>
               </div>
               <div className="mt-2">
@@ -36,7 +36,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col md:w-1/2">
                   <div className="flex justify-start items-center mt-3">
-                    <img src="/images/uc8care.png" alt=""></img>
+                    <img src="/images/uc8care.svg" className="w-12 h-12" alt=""></img>
                     <h2 className="text-xl font-bold px-3">UC8 Care</h2>
                   </div>
                   <div>
@@ -50,7 +50,7 @@ const Uc8CustomerCare = () => {
                 </div>
                 <div className="flex flex-col md:w-1/2">
                   <div className="flex justify-start items-center mt-3">
-                    <img src="/images/uc8Vip.png" alt=""></img>
+                    <img src="/images/vip.svg"  className="w-12 h-12" alt=""></img>
                     <h2 className="text-xl font-bold px-3">UC8 VIP Club</h2>
                   </div>
                   <div>
@@ -64,9 +64,9 @@ const Uc8CustomerCare = () => {
             </div>
           </div>
           <div className="lg:w-1/2 px-12 pt-5">
-            <div className="flex flex-col lg:mt-[-120px]">
+            <div className="flex flex-col lg:mt-[-30px]">
               <div className="flex justify-start items-center">
-                <img src="/images/productFeatures.png" alt=""></img>
+                <img src="/images/features.svg"  className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">Product Features</h2>
               </div>
               <div className="ml-16">
@@ -77,7 +77,7 @@ const Uc8CustomerCare = () => {
               </div>
               <div className="flex flex-row">
                 <div className="px-1">
-                  <img src="/images/callingFeatures.png" alt=""></img>
+                  <img src="/images/phone1.svg" className="w-12 h-12" alt=""></img>
                 </div>
                 <div className="w-[30%] p-1">
                   <div className="border border-solid border-gray-300">
@@ -121,7 +121,7 @@ const Uc8CustomerCare = () => {
               </div>
               <div className="flex flex-row">
                 <div className="px-1">
-                  <img src="/images/businessFeatures.png" alt=""></img>
+                  <img src="/images/businesscare.svg" className="w-12 h-12" alt=""></img>
                 </div>
                 <div className="w-[30%] p-1">
                   <div className="border border-solid border-gray-300">
@@ -165,7 +165,7 @@ const Uc8CustomerCare = () => {
               </div>
               <div className="flex md:flex-row">
                 <div className="px-1">
-                  <img src="/images/callcentre.png" alt=""></img>
+                  <img src="/images/callcenter.svg"  className="w-12 h-12" alt=""></img>
                 </div>
                 <div className="w-[30%] p-1">
                   <div className="border border-solid border-gray-300">
@@ -199,7 +199,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/noupfront.png" alt=""></img>
+                    <img src="/images/noupfront.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <p className="text-xs text-center">
                     No Upfront<br></br>Hardware Cost
@@ -209,7 +209,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/voice.png" alt=""></img>
+                    <img src="/images/voiceplan.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <p className="text-xs text-center">
                     Choose Your<br></br>Voice Plan
@@ -219,7 +219,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/hosted.png" alt=""></img>
+                    <img src="/images/hosted.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <p className="text-xs text-center">
                     Hosted Locally<br></br>in Australia
@@ -229,7 +229,7 @@ const Uc8CustomerCare = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center items-center">
                   <div>
-                    <img src="/images/keep.png" alt=""></img>
+                    <img src="/images/keep.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <p className="text-xs text-center">
                     Keep Your<br></br>Current Numbers
@@ -241,8 +241,8 @@ const Uc8CustomerCare = () => {
           </div>
           
         </div>
-        <div className="bg-[#A020F0] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
-        <p className="text-white mr-24">"Future Technology Today"</p>
+        <div className="bg-[#b11116] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
+        <p className="text-white font-bold mr-48  font-bradhitc">"Future Technology Today"</p>
       </div>
       </div>
 

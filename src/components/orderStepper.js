@@ -59,27 +59,27 @@ console.log(terms);
       <div className="flex flex-col lg:flex-row">
         <div className="text-center p-4 md:p-12 bg-gray-100">
           <div className="flex items-center justify-center">
-            <h1 className=" text-2xl md:text-4xl font-semibold text-[#a020ef]">
+            <h1 className=" text-2xl md:text-4xl font-semibold text-red-500">
                 Your Order Process
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center mt-4 text-left space-y-10">
             <div className="space-y-2">
-              <h2 className="text-2xl text-[#a020ef]">Equipment</h2>
-              <p>Reception Phone = <span className="text-2xl text-[#a020ef] font-bold">{receptionPhone}</span> </p>
-              <p>Excusive Phone = <span className="text-2xl text-[#a020ef] font-bold">{desktopPhone}</span></p>
-              <p>Cordless Phone = <span className="text-2xl text-[#a020ef] font-bold">{cordlessPhone}</span></p>
-              <p>Softphone = <span className="text-2xl text-[#a020ef] font-bold">{softPhone}</span></p>
-              <p>Total Equipment = <span className="text-2xl text-[#a020ef] font-bold">{total}</span></p>
-              <p>Total Seats = <span className="text-2xl text-[#a020ef] font-bold">{total}</span> </p>
+              <h2 className="text-2xl text-red-500 ">Equipment</h2>
+              <p>Reception Phone = <span className="text-2xl text-red-500 font-bold">{receptionPhone}</span> </p>
+              <p>Excusive Phone = <span className="text-2xl text-red-500 font-bold">{desktopPhone}</span></p>
+              <p>Cordless Phone = <span className="text-2xl text-red-500 font-bold">{cordlessPhone}</span></p>
+              <p>Softphone = <span className="text-2xl text-red-500 font-bold">{softPhone}</span></p>
+              <p>Total Equipment = <span className="text-2xl text-red-500 font-bold">{total}</span></p>
+              <p>Total Seats = <span className="text-2xl text-red-500 font-bold">{total}</span> </p>
             </div>
             <div className="space-y-2">
-              <h2 className="text-2xl text-[#a020ef]">Upfront Cost</h2>
-              <p>Terms = <span className="text-2xl text-[#a020ef] font-bold">{terms}</span> </p>
-              <p>Upfront Cost =<span className="text-2xl text-[#a020ef] font-bold">{upfrontCost}</span>  </p>
+              <h2 className="text-2xl text-red-500">Upfront Cost</h2>
+              <p>Terms = <span className="text-2xl text-red-500 font-bold">{terms}</span> </p>
+              <p>Upfront Cost =<span className="text-2xl text-red-500 font-bold">{upfrontCost}</span>  </p>
             </div>
             <div className="space-y-2">
-              <h2 className="text-2xl text-[#a020ef]">Monthly Cost</h2>
+              <h2 className="text-2xl text-red-500">Monthly Cost</h2>
               <p>UC8 PBX = </p>
               <p>Seat Licence = </p>
               <p>Call Cost = </p>
@@ -155,7 +155,7 @@ console.log(terms);
                 <span
                   key={s.id}
                   className={`mr-2 ${
-                    s.id === step ? "text-red-700 " : "text-gray-500"
+                    s.id === step ? "text-red-500" : "text-gray-500"
                   }`}
                 >
                   &bull;

@@ -77,7 +77,7 @@ export default function Equipment() {
                   key={index}
                   className="p-4 flex flex-col items-center border border-solid  rounded-xl  shadow-xl shadow-gray-300 hover:shadow-gray-500 hover:duration-500"
                 >
-                  <div className="text-sm text-center bg-red-500 border rounded-full py-2 px-4 text-white h-10 leading-[13px] flex items-center ">
+                  <div className="text-sm text-center bg-red-500 border rounded-full py-2 px-6 text-white h-10 flex items-center ">
                     {card.title}
                   </div>
                   <img
@@ -85,7 +85,7 @@ export default function Equipment() {
                     alt={card.title}
                     className="w-32 h-32 object-contain mb-4"
                   />
-                  <div className="flex justify-between items-center border border-solid border-gray-300 rounded-2xl">
+                  <div className="flex justify-between items-center border border-solid border-gray-300 rounded-2xl w-5/6">
                     <button
                       onClick={() => handleDecrement(index)}
                       className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-500 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"

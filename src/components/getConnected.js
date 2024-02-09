@@ -5,7 +5,7 @@ const GetConnected = () => {
     <div>
       <div className="lg:flex flex-col items-center m-auto pt-5">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[27vh] lg:w-full lg:ml-24"
+          className="lg:flex justify-between bg-cover bg-center h-[14vh] lg:w-full lg:ml-24"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
@@ -14,7 +14,7 @@ const GetConnected = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-full">
           <div className="lg:w-1/2 px-12">
-            <div className="flex justify-start items-center -mt-24">
+            <div className="flex justify-start items-center mt-5">
               <img src="/images/1.png" alt=""></img>
               <h2 className="text-xl font-bold px-3">Get Connected</h2>
             </div>
@@ -30,13 +30,13 @@ const GetConnected = () => {
                 </colgroup>
                 <thead>
                   <tr>
-                    <th className="bg-gray-200 p-4 text-left text-[#A020F0]">
+                    <th className="bg-gray-200 p-4 text-left text-[#ed1c24]">
                       Foundation
                     </th>
-                    <th className="bg-gray-200 p-4 text-center text-[#A020F0]">
+                    <th className="bg-gray-200 p-4 text-center text-[#ed1c24]">
                       Plan
                     </th>
-                    <th className="bg-gray-200 p-4 text-center text-[#A020F0]">
+                    <th className="bg-gray-200 p-4 text-center text-[#ed1c24]">
                       Price
                     </th>
                   </tr>
@@ -61,7 +61,7 @@ const GetConnected = () => {
                             Calling Number
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#A020F0]">+</div>
+                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/uc8icon.png" alt="" />
@@ -72,7 +72,7 @@ const GetConnected = () => {
                             Phone System
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#A020F0]">+</div>
+                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/linetower.png" alt="" />
@@ -83,7 +83,7 @@ const GetConnected = () => {
                             Unlimited Calling Lines*
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#A020F0]">+</div>
+                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/recruiter.png" alt="" />
@@ -120,7 +120,7 @@ const GetConnected = () => {
                   <img src="/images/phone1.png" alt="IP cordless" />
                 </div>
                 <div className="text-center mt-2">
-                  <span className="bg-[#A020F0] text-white px-2 py-1 rounded-2xl text-xs">
+                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
                     IP Cordless
                   </span>
                 </div>
@@ -145,7 +145,7 @@ const GetConnected = () => {
                   <img src="/images/telephone.png" alt="IP cordless" />
                 </div>
                 <div className="text-center">
-                  <span className="bg-[#A020F0] text-white px-2 py-1 rounded-2xl text-xs">
+                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
                     IP Handset
                   </span>
                 </div>
@@ -170,7 +170,7 @@ const GetConnected = () => {
                   <img src="/images/pad.png" alt="IP cordless" />
                 </div>
                 <div className="text-center">
-                  <span className="bg-[#A020F0] text-white px-2 py-1 rounded-2xl text-xs">
+                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
                     IP Softphone
                   </span>
                 </div>
@@ -200,19 +200,19 @@ const GetConnected = () => {
               <table className="w-full border-collapse border border-white">
                 <thead>
                   <tr className="bg-gray-100">
-                    <th className="border border-white p-3 text-[#A020F0]">
+                    <th className="border border-white p-3 text-[#ed1c24]">
                       <div className="flex justify-start items-center text-sm">
                         <img src="/images/term.png" alt=""></img>
                         &nbsp; &nbsp;&nbsp;Contract Term
                       </div>
                     </th>
-                    <th className="border border-white p-3 text-sm text-[#A020F0]">
+                    <th className="border border-white p-3 text-sm text-[#ed1c24]">
                       Setup<br></br>
                       <span className="text-xs text-gray-900 font-thin">
                         Per Device
                       </span>
                     </th>
-                    <th className="border border-white p-3 text-sm text-[#A020F0]">
+                    <th className="border border-white p-3 text-sm text-[#ed1c24]">
                       Delivery<br></br>
                       <span className="text-xs text-gray-900 font-thin">
                         Per Device
@@ -285,7 +285,7 @@ const GetConnected = () => {
           <div className="lg:w-1/2 pt-5">
             {/* 4. Select Your Call Plan */}
 
-            <div className="flex justify-start items-center lg:-mt-36">
+            <div className="flex justify-start items-center ">
               <img src="/images/4.png" alt=""></img>
               <h2 className="text-xl font-bold px-3">Select Your Call Plan</h2>
             </div>
@@ -294,10 +294,10 @@ const GetConnected = () => {
                 <thead>
                   <tr className="bg-gray-300">
                     <th className="border border-white p-3 text-sm w-1/4"></th>
-                    <th className="border border-white p-3 bg-[#A020F0] text-white relative w-1/4">
+                    <th className="border border-white p-3 bg-[#ed1c24] text-white relative w-1/4">
                       <div className="absolute inset-x-0 -top-[6px] flex justify-center">
                         <div className="flex items-center">
-                          <img src="/images/ribbon.png" alt=""></img>
+                          <img src="/images/popular.svg" className="h-8" alt=""></img>
                         </div>
                       </div>
                       <div className="text-center text-xl font-thin mt-[24px] ">
@@ -307,7 +307,7 @@ const GetConnected = () => {
                         </span>
                       </div>
                     </th>
-                    <th className="border border-white p-3 bg-[#7B14B6] text-white w-1/4">
+                    <th className="border border-white p-3 bg-[#b11116] text-white w-1/4">
                       <div className="text-center text-xl font-thin">
                         Call Centre<br></br>
                         <span className="text-xs text-white font-thin">
@@ -315,7 +315,7 @@ const GetConnected = () => {
                         </span>
                       </div>
                     </th>
-                    <th className="border border-white p-3 bg-[#56077B] text-white w-1/4">
+                    <th className="border border-white p-3 bg-[#ed1c24] text-white w-1/4">
                       <div className="text-center text-xl font-thin">
                         Ultimate<br></br>
                         <span className="text-xs text-white font-thin">
@@ -353,18 +353,18 @@ const GetConnected = () => {
                       H400
                     </td>
                   </tr>
-                  <tr className="bg-gray-100 text-[#A020F0]">
+                  <tr className="bg-gray-100 text-[#ed1c24]">
                     <td className="border border-white p-1 ">
                       <div className="flex items-center">
                         <div className="px-3">
-                          <img src="/images/call.png" alt="call rates"></img>
+                          <img src="/images/ring.svg" className="w-4 h-4" alt="call rates"></img>
                         </div>
                         Call Rates
                       </div>
                     </td>
                     <td className="bg-gray-100">
                       <table className="w-full border-collapse border border-white">
-                        <tr className="bg-gray-100 text-[#A020F0]">
+                        <tr className="bg-gray-100 text-[#ed1c24]">
                           <td className="border border-white text-center p-1 w-1/3">
                             Rate
                           </td>
@@ -379,7 +379,7 @@ const GetConnected = () => {
                     </td>
                     <td className="bg-gray-100">
                       <table className="w-full border-collapse border border-white">
-                        <tr className="bg-gray-100 text-[#A020F0]">
+                        <tr className="bg-gray-100 text-[#ed1c24]">
                           <td className="border border-white text-center p-1 w-1/3">
                             Rate
                           </td>
@@ -394,7 +394,7 @@ const GetConnected = () => {
                     </td>
                     <td className="bg-gray-100">
                       <table className="w-full border-collapse border border-white">
-                        <tr className="bg-gray-100 text-[#A020F0]">
+                        <tr className="bg-gray-100 text-[#ed1c24]">
                           <td className="border border-white text-center p-1 w-1/3">
                             Rate
                           </td>
@@ -645,12 +645,12 @@ const GetConnected = () => {
                       Minimum call charge1c. All Prices are inclusive of GST.
                     </td>
                   </tr>
-                  <tr className="bg-gray-100 text-[#A020F0]">
+                  <tr className="bg-gray-100 text-[#ed1c24]">
                     <td className="border border-white p-1" colSpan={2}>
                       <div className="flex items-center">
                         <div className="px-3">
                           <img
-                            src="/images/optional.png"
+                            src="/images/optional.svg" className="w-4 h-4"
                             alt="call rates"
                           ></img>
                         </div>
@@ -659,7 +659,7 @@ const GetConnected = () => {
                     </td>
                     <td className="bg-gray-100">
                       <table className="w-full border-collapse border border-white">
-                        <tr className="bg-gray-100 text-[#A020F0]">
+                        <tr className="bg-gray-100 text-[#ed1c24]">
                           <td className="border border-white text-center p-1 w-1/3">
                             Plan
                           </td>
@@ -668,7 +668,7 @@ const GetConnected = () => {
                     </td>
                     <td className="bg-gray-100">
                       <table className="w-full border-collapse border border-white">
-                        <tr className="bg-gray-100 text-[#A020F0]">
+                        <tr className="bg-gray-100 text-[#ed1c24]">
                           <td className="border border-white text-center p-1 w-1/3">
                             Price
                           </td>
@@ -720,7 +720,7 @@ const GetConnected = () => {
                     <td className="border border-white p-1 text-sm" colSpan={2}>
                       UC8 Connection Pack
                       <div>
-                        <img src="/images/pack.png" alt=""></img>
+                        <img src="/images/pack.svg" className="h-10" alt=""></img>
                       </div>
                     </td>
                     <td className="bg-gray-100 text-center">C100</td>
@@ -757,8 +757,8 @@ const GetConnected = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#A020F0] h-16 flex items-center justify-end w-full mt-12">
-          <p className="text-white mr-24">"Future Technology Today"</p>
+        <div className="bg-[#ed1c24] h-16 flex items-center justify-end w-full mt-12">
+          <p className="text-white mr-24 font-bradhitc">"Future Technology Today"</p>
         </div>
       </div>
     </div>

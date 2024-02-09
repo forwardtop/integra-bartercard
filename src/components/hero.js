@@ -27,7 +27,7 @@ export default function Hero() {
               Hosted <span className="text-red-500">IPPBX</span>
               <br></br> Business Phone Systems
             </h1>
-            <div className="relative rounded-full px-3 py-3 text-2xl leading-10 text-red-500">
+            <div className="relative rounded-full px-3 py-3 text-2xl leading-10 text-red-500 font-bradhitc">
               “Future Technology Today”
             </div>
             <p className="text-xl leading-10 text-white">
