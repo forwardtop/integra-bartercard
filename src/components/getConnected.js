@@ -758,7 +758,7 @@ const GetConnected = () => {
           </div>
         </div>
         <div className="bg-[#ed1c24] h-16 flex items-center justify-end w-full mt-12">
-          <p className="text-white mr-24 font-bradhitc">"Future Technology Today"</p>
+          <p className="text-white mr-24 font-bradhitc font-bold">"Future Technology Today"</p>
         </div>
       </div>
     </div>
