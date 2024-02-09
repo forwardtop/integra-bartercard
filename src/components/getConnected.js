@@ -202,7 +202,7 @@ const GetConnected = () => {
                   <tr className="bg-gray-100">
                     <th className="border border-white p-3 text-[#ed1c24]">
                       <div className="flex justify-start items-center text-sm">
-                        <img src="/images/term.png" alt=""></img>
+                        <img src="/images/term.svg" className="w-5" alt=""></img>
                         &nbsp; &nbsp;&nbsp;Contract Term
                       </div>
                     </th>
