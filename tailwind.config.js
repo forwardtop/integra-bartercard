@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans'],
         bradhitc: ['BRADHITC', 'sans'],
+        gothic: ['GOTHIC', 'sans'],
       },
     },
   },
