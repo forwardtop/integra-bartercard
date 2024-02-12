@@ -3,24 +3,24 @@ import React from "react";
 const GetConnected = () => {
   return (
     <div>
-      <div className="lg:flex flex-col items-center m-auto pt-5">
+      <div className="m-auto pt-5 max-w-3xl">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[14vh] lg:w-full lg:ml-24"
+          className="flex justify-between bg-cover bg-center"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
             <img src="/images/getconnected.png" alt="" className="p-8 "></img>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row w-full">
-          <div className="lg:w-1/2 px-12">
+        <div className="flex flex-col w-full">
+          <div className="">
             <div className="flex justify-start items-center mt-5">
               <img src="/images/1.png" alt=""></img>
               <h2 className="text-xl font-bold px-3">Get Connected</h2>
             </div>
-            <div className="w-full">
+            <div className="w-full overflow-x-auto">
               <table
-                className="w-full"
+                className="lg:w-full"
                 style={{ borderCollapse: "separate", borderSpacing: "2px" }}
               >
                 <colgroup>
@@ -282,14 +282,14 @@ const GetConnected = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 pt-5">
+          
             {/* 4. Select Your Call Plan */}
 
-            <div className="flex justify-start items-center ">
+            <div className="flex justify-start items-center mt-4">
               <img src="/images/4.png" alt=""></img>
               <h2 className="text-xl font-bold px-3">Select Your Call Plan</h2>
             </div>
-            <div className="mx-auto">
+            <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="bg-gray-300">
@@ -756,12 +756,14 @@ const GetConnected = () => {
               </table>
             </div>
           </div>
+          <div className="bg-[#5F6B77] h-16 flex items-center justify-end mt-12">
+          <p className="text-white font-bold mr-48  font-bradhitc">
+            "Future Technology Today"
+          </p>
         </div>
-        <div className="bg-[#ed1c24] h-16 flex items-center justify-end w-full mt-12">
-          <p className="text-white mr-24 font-bradhitc font-bold">"Future Technology Today"</p>
         </div>
+        
       </div>
-    </div>
   );
 };
 

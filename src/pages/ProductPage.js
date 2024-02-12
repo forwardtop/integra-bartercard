@@ -13,8 +13,8 @@ function ProductPage() {
         <Header />
         <BreadCrumbsBar />
         <Uc8AI />
-        <Uc8CustomerCare />
         <About />
+        <Uc8CustomerCare />
         <GetConnected />
         <Footer />
       </div>

@@ -3,24 +3,24 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div className="lg:flex flex-col items-center m-auto pt-5">
+      <div className="m-auto pt-5 max-w-3xl">
         <div
-          className="lg:flex justify-between bg-cover bg-center h-[14vh] w-9/10 lg:w-2/3"
+          className="flex justify-between bg-cover bg-center"
           style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
         >
           <div>
             <img src="/images/about.png" alt="" className="p-8 "></img>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row w-9/10 lg:w-2/3">
-          <div className="lg:w-1/2 px-12">
+        <div className="flex flex-col">
+          <div className="px-12 py-5">
             <div className="flex flex-col">
               <div className="flex justify-start items-center">
                 <img src="/images/voip.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">What is VOIP?</h2>
               </div>
               <div className="mt-2">
-                <p className="text-xs">
+                <p className="text-sm">
                   VoIP (Voice over Internet Protocol), is the technology of
                   converting your voice calls into data packets, VoIP data
                   packets are transmitted over the Internet. Data is secure and
@@ -34,7 +34,7 @@ const About = () => {
                 <h2 className="text-xl font-bold px-3">Why UC8</h2>
               </div>
               <div className="mt-2">
-                <p className="text-xs">
+                <p className="text-sm">
                   For over 25 years UC8 technologies R&D department and
                   engineers have developed and refined one of the world’s most
                   powerful business phone system platforms. UC8 is powerful and
@@ -46,14 +46,14 @@ const About = () => {
               <img src="/images/uc8diagram.png" alt=""></img>
             </div>
           </div>
-          <div className="lg:w-1/2 px-12">
+          <div className="px-12">
             <div className="flex flex-col">
               <div className="flex justify-start items-center">
                 <img src="/images/benefits.svg" className="w-12 h-12" alt=""></img>
                 <h2 className="text-xl font-bold px-3">UC8 Benefits</h2>
               </div>
               <div className="mt-2">
-                <p className="text-xs">
+                <p className="text-sm">
                   Your business calls are made over your broadband Internet
                   connection, but at a fraction of the cost. VoIP is easy to set
                   up and you can keep your current telephone numbers. UC8 is an
@@ -79,7 +79,7 @@ const About = () => {
                     <img src="/images/saving.svg" className="w-10 h-10" alt=""></img>
                   </div>
                   <h5 className="text-sm font-bold mb-3">Saving</h5>
-                  <p className="text-xs">
+                  <p className="text-sm">
                     As UC8 IPPBX is a hosted platform, you do not need to buy
                     expensive on-premise phone system hardware. With UC8 you can
                     connect with as little as one telephone extension, simply
@@ -97,7 +97,7 @@ const About = () => {
                     <img src="/images/multi.svg" className="h-10" alt=""></img>
                   </div>
                   <h5 className="text-sm font-bold mb-3">Multi-site</h5>
-                  <p className="text-xs px-3">
+                  <p className="text-sm px-3">
                     This is a feature rich phone system delivering high
                     performance to your business. If you have multiple branch
                     offices or staff who work from home, UC8 supports
@@ -114,7 +114,7 @@ const About = () => {
                 <h2 className="text-xl font-bold px-3">How Does It Work?</h2>
               </div>
               <div className="mt-2">
-                <p className="text-xs">
+                <p className="text-sm">
                   For over 25 years UC8 technologies R&D department and
                   engineers have developed and refined one of the world’s most
                   powerful business phone system platforms. UC8 is powerful and
@@ -125,7 +125,7 @@ const About = () => {
           </div>
         </div>
         
-        <div className="bg-[#b11116] h-16 flex items-center justify-end w-9/10 lg:w-2/3 mt-12">
+        <div className="bg-[#5F6B77] h-16 flex items-center justify-end mt-12">
           <p className="text-white mr-24 font-bradhitc font-bold">"Future Technology Today"</p>
         </div>
       </div>
