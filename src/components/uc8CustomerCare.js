@@ -69,23 +69,19 @@ const Uc8CustomerCare = () => {
             </div>
           </div>
           <div className="bg-[#5F6B77] h-16 flex items-center justify-end mt-12 mb-5">
-            <p className="text-white font-bold mr-48  font-bradhitc">
-              "Future Technology Today"
-            </p>
-          </div>
+          <p className="text-white font-bold mr-48  font-bradhitc">
+            "Future Technology Today"
+          </p>
+        </div>
           <div>
             <div
-              className="flex justify-between bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
-            >
-              <div>
-                <img
-                  src="/images/customerCare.png"
-                  alt=""
-                  className="p-8 "
-                ></img>
-              </div>
-            </div>
+          className="flex justify-between bg-cover bg-center"
+          style={{ backgroundImage: "url(/images/customerCareHeader.png)" }}
+        >
+          <div>
+            <img src="/images/features.png" alt="" className="p-8 "></img>
+          </div>
+        </div>
             <div className="px-12 pt-5">
               <div className="flex flex-col space-y-5">
                 <div className="flex justify-start items-center">
@@ -235,7 +231,7 @@ const Uc8CustomerCare = () => {
                     Our Promise
                   </h2>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex flex-col lg:flex-row justify-between">
                   <div className="flex flex-col lg:flex-row">
                     <div className="flex flex-col justify-center items-center">
                       <div>

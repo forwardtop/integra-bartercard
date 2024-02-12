@@ -6,6 +6,7 @@ import Uc8AI from '../components/uc8AI';
 import Uc8CustomerCare from '../components/uc8CustomerCare';
 import About from '../components/about';
 import GetConnected from '../components/getConnected';
+import Last from '../components/last';
 
 function ProductPage() {
     return (
@@ -16,6 +17,7 @@ function ProductPage() {
         <About />
         <Uc8CustomerCare />
         <GetConnected />
+        <Last />
         <Footer />
       </div>
     );
