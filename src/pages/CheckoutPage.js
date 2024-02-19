@@ -5,10 +5,13 @@ import Header from '../components/header';
 function CheckoutPage() {
   const steps = ["Device", "Terms", "Lines", "Options", "CheckOut"];
     return (
-      <div  style={{ paddingTop: '18vh', paddingLeft: '10%', paddingRight: '10%'}}>
+      <div >
         <Header />
+        <div className='max-w-[1400px] mx-auto'>
         <Stepper steps={steps} />
         <CheckOut />
+        </div>
+        
       </div>
     );
   }

@@ -6,7 +6,7 @@ import { AuthContext } from "../config/AuthContext";
 // import axios from "axios";
 import Step4 from "../components/step4";
 import Equipment from "./equipment";
-import SelectTerm from "./selectTerm";
+import Ippbx from "./ippbx";
 
 const steps = [
   { id: 1, component: Step1 },
@@ -80,7 +80,7 @@ console.log(terms);
             </div>
             <div className="space-y-2">
               <h2 className="text-2xl text-red-500">Monthly Cost</h2>
-              <p>UC8 PBX = </p>
+              <p>UC8 PBX = $<span className="text-2xl text-red-500 font-bold"> 39</span></p>
               <p>Seat Licence = </p>
               <p>Call Cost = </p>
               <p>Total = </p>
@@ -99,7 +99,7 @@ console.log(terms);
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {step === 1 && <Equipment />}
+            {step === 1 && <Ippbx />}
           </div>
           <div
             className={`transition-transform duration-500 ${
@@ -108,7 +108,7 @@ console.log(terms);
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {step === 2 && <SelectTerm />}
+            {step === 2 && <Equipment />}
           </div>
           <div
             className={`transition-transform duration-500 ${
