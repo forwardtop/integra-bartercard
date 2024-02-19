@@ -55,7 +55,7 @@ const OrderProcess = () => {
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row  font-gothic">
         <div className="text-center bg-gray-100 lg:w-1/4">
           <div className="flex flex-col items-center justify-center mt-3">
             <div className=" bg-red-500 w-full lg:w-2/3">
@@ -65,152 +65,152 @@ const OrderProcess = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center mt-1 text-left space-y-1 lg:w-2/3">
-            <div className="w-full border-gray-500 border border-solid rounded-md">
+            <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">
                 <div className="bg-red-100 flex justify-between">
                   <h2 className="text-red-500 pl-5 font-bold">Your Equipment</h2>
                   <h2 className="text-red-500 pr-2 font-bold">Total</h2>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Reception Phone</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     {receptionPhone}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-sm pl-5">Excusive Phone</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <p className="text-sm pl-5">Executive Phone</p>
+                  <span className="text-gray-700 font-bold pr-2">
                     {desktopPhone}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Cordless Phone</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     {cordlessPhone}
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Softphone</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     {softPhone}
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
                   <h2 className=" text-red-500 pl-5 font-bold">Total</h2>
-                  <h2 className="text-red-500 pr-5 font-bold">{total}</h2>
+                  <h2 className="text-red-500 pr-2 font-bold">{total}</h2>
                 </div>
               </div>
-              <div className="w-full border-gray-500 border border-solid rounded-md">
+              <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">
                 <div className="bg-red-100">
                   <h2 className="px-5 text-red-500 font-bold">Upfront Cost</h2>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Total phone hardware cost</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Setup cost</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Number porting fee</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Professional installation</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Delivery fee</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">NBN Installation Fee</p>
-                  <span className="text-red-500 font-bold pr-5">
-                    {upfrontCost}
+                  <span className="text-gray-700 font-bold pr-2">
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
                   <h2 className=" px-5 text-red-500  font-bold">Total</h2>
-                  <h2 className="text-red-500  font-bold pr-5">$ 174</h2>
+                  <h2 className="text-red-500  font-bold pr-2">$ 174</h2>
                 </div>
               </div>
-              <div className="w-full border-gray-500 border border-solid rounded-md">
+              <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">
                 <div className="bg-red-100">
                   <h2 className=" px-5 text-red-500  font-bold">Monthly Cost</h2>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">H100 - UC8 Foundation Cost</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 39
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">H200 - UC8 Seat Licence</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 100
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">H200 - UC8 Calling Plan - PAYG</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     TBA
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">S100 - UC8 SLA Support Agreement</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 50
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">C100 - UC8 Connection Pack</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 39
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">N100 - National Number</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 20
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">B520 - UC8 NBN+Voip Tail 100/20</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                     $ 99
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
                   <h2 className=" px-5 text-red-500  font-bold">Total</h2>
-                  <h2 className="text-red-500  font-bold pr-5">$ 347</h2>
+                  <h2 className="text-red-500  font-bold pr-2">$ 347</h2>
                 </div>
               </div>
-              <div className="w-full border-gray-500 border border-solid rounded-md">
+              <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">
                 <div className="bg-red-100">
                   <h2 className=" px-5 text-red-500  font-bold">Plan Details</h2>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Terms - 36 Months</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                   
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Calling Plan</p>
-                  <span className="text-red-500 font-bold pr-5">
+                  <span className="text-gray-700 font-bold pr-2">
                   
                   </span>
                 </div>
