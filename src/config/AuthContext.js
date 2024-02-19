@@ -21,14 +21,14 @@ export const AuthProvider = ({ children }) => {
   const [isValidPhoneNumber, setIsValidPhoneNumber] = useState("");
   const [isFormValid, setIsFormValid] = useState("");
   const [showValidationMessage, setShowValidationMessage] = useState(false);
-  const [total, setTotal] = useState("");
-  const [nTel, setNTel] = useState("");
-  const [receptionPhone, setReceptionPhone] = useState("");
-  const [desktopPhone, setDesktopPhone] = useState("");
-  const [cordlessPhone, setCordlessPhone] = useState("");
-  const [softPhone, setSoftPhone] = useState("");
-  const [terms, setTerms] = useState("");
-  const [upfrontCost, setUpfrontCost] = useState("");
+  const [total, setTotal] = useState("0");
+  const [nTel, setNTel] = useState("0");
+  const [receptionPhone, setReceptionPhone] = useState("0");
+  const [desktopPhone, setDesktopPhone] = useState("0");
+  const [cordlessPhone, setCordlessPhone] = useState("0");
+  const [softPhone, setSoftPhone] = useState("0");
+  const [terms, setTerms] = useState("0");
+  const [upfrontCost, setUpfrontCost] = useState("0");
   
  
 

@@ -17,15 +17,15 @@ const steps = [
 const OrderProcess = () => {
   const [step, setStep] = useState(1);
 
-//   const { email } = useContext(AuthContext);
-//   const { firstName } = useContext(AuthContext);
-//   const { lastName } = useContext(AuthContext);
-//   const { phoneNumber } = useContext(AuthContext);
-//   const { country } = useContext(AuthContext);
-//   const { primary } = useContext(AuthContext);
-//   const { company } = useContext(AuthContext);
-//   const { employee } = useContext(AuthContext);
-//   const { isValidEmail } = useContext(AuthContext);
+  //   const { email } = useContext(AuthContext);
+  //   const { firstName } = useContext(AuthContext);
+  //   const { lastName } = useContext(AuthContext);
+  //   const { phoneNumber } = useContext(AuthContext);
+  //   const { country } = useContext(AuthContext);
+  //   const { primary } = useContext(AuthContext);
+  //   const { company } = useContext(AuthContext);
+  //   const { employee } = useContext(AuthContext);
+  //   const { isValidEmail } = useContext(AuthContext);
   const { setShowValidationMessage } = useContext(AuthContext);
   const { total } = useContext(AuthContext);
   const { receptionPhone } = useContext(AuthContext);
@@ -35,8 +35,7 @@ const OrderProcess = () => {
   const { terms } = useContext(AuthContext);
   const { upfrontCost } = useContext(AuthContext);
 
-console.log(terms);
-
+  console.log(terms);
 
   const handleNext = () => {
     setShowValidationMessage(true);
@@ -57,39 +56,172 @@ console.log(terms);
   return (
     <div>
       <div className="flex flex-col lg:flex-row">
-        <div className="text-center p-4 md:p-12 bg-gray-100">
-          <div className="flex items-center justify-center">
-            <h1 className=" text-2xl md:text-4xl font-semibold text-red-500">
-                Your Order Process
-            </h1>
-          </div>
-          <div className="flex flex-col items-center justify-center mt-4 text-left space-y-10">
-            <div className="space-y-2">
-              <h2 className="text-2xl text-red-500 ">Equipment</h2>
-              <p>Reception Phone = <span className="text-2xl text-red-500 font-bold">{receptionPhone}</span> </p>
-              <p>Excusive Phone = <span className="text-2xl text-red-500 font-bold">{desktopPhone}</span></p>
-              <p>Cordless Phone = <span className="text-2xl text-red-500 font-bold">{cordlessPhone}</span></p>
-              <p>Softphone = <span className="text-2xl text-red-500 font-bold">{softPhone}</span></p>
-              <p>Total Equipment = <span className="text-2xl text-red-500 font-bold">{total}</span></p>
-              <p>Total Seats = <span className="text-2xl text-red-500 font-bold">{total}</span> </p>
+        <div className="text-center bg-gray-100 lg:w-1/4">
+          <div className="flex flex-col items-center justify-center mt-3">
+            <div className=" bg-red-500 w-full lg:w-2/3">
+              <h1 className="text-2xl md:text-xl font-bold text-white px-2">
+                Your Order
+              </h1>
             </div>
-            <div className="space-y-2">
-              <h2 className="text-2xl text-red-500">Upfront Cost</h2>
-              <p>Terms = <span className="text-2xl text-red-500 font-bold">{terms}</span> </p>
-              <p>Upfront Cost =<span className="text-2xl text-red-500 font-bold">{upfrontCost}</span>  </p>
-            </div>
-            <div className="space-y-2">
-              <h2 className="text-2xl text-red-500">Monthly Cost</h2>
-              <p>UC8 PBX = $<span className="text-2xl text-red-500 font-bold"> 39</span></p>
-              <p>Seat Licence = </p>
-              <p>Call Cost = </p>
-              <p>Total = </p>
+
+            <div className="flex flex-col items-center justify-center mt-1 text-left space-y-1 lg:w-2/3">
+            <div className="w-full border-gray-500 border border-solid rounded-md">
+                <div className="bg-red-100 flex justify-between">
+                  <h2 className="text-red-500 pl-5 font-bold">Your Equipment</h2>
+                  <h2 className="text-red-500 pr-2 font-bold">Total</h2>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Reception Phone</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {receptionPhone}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Excusive Phone</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {desktopPhone}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Cordless Phone</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {cordlessPhone}
+                  </span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Softphone</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {softPhone}
+                  </span>
+                </div>
+                <div className="bg-red-100 flex justify-between">
+                  <h2 className=" text-red-500 pl-5 font-bold">Total</h2>
+                  <h2 className="text-red-500 pr-5 font-bold">{total}</h2>
+                </div>
+              </div>
+              <div className="w-full border-gray-500 border border-solid rounded-md">
+                <div className="bg-red-100">
+                  <h2 className="px-5 text-red-500 font-bold">Upfront Cost</h2>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Total phone hardware cost</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Setup cost</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Number porting fee</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Professional installation</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Delivery fee</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">NBN Installation Fee</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    {upfrontCost}
+                  </span>
+                </div>
+                <div className="bg-red-100 flex justify-between">
+                  <h2 className=" px-5 text-red-500  font-bold">Total</h2>
+                  <h2 className="text-red-500  font-bold pr-5">$ 174</h2>
+                </div>
+              </div>
+              <div className="w-full border-gray-500 border border-solid rounded-md">
+                <div className="bg-red-100">
+                  <h2 className=" px-5 text-red-500  font-bold">Monthly Cost</h2>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">H100 - UC8 Foundation Cost</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 39
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">H200 - UC8 Seat Licence</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 100
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">H200 - UC8 Calling Plan - PAYG</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    TBA
+                  </span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">S100 - UC8 SLA Support Agreement</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 50
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">C100 - UC8 Connection Pack</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 39
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">N100 - National Number</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 20
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">B520 - UC8 NBN+Voip Tail 100/20</p>
+                  <span className="text-red-500 font-bold pr-5">
+                    $ 99
+                  </span>
+                </div>
+                <div className="bg-red-100 flex justify-between">
+                  <h2 className=" px-5 text-red-500  font-bold">Total</h2>
+                  <h2 className="text-red-500  font-bold pr-5">$ 347</h2>
+                </div>
+              </div>
+              <div className="w-full border-gray-500 border border-solid rounded-md">
+                <div className="bg-red-100">
+                  <h2 className=" px-5 text-red-500  font-bold">Plan Details</h2>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Terms - 36 Months</p>
+                  <span className="text-red-500 font-bold pr-5">
+                  
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <p className="text-sm pl-5">Calling Plan</p>
+                  <span className="text-red-500 font-bold pr-5">
+                  
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         {/* Section 2: Quote Request Form */}
         <div
-          className="flex flex-col items-center mx-5 lg:mx-auto mt-12"
+          className="flex flex-col items-center mx-1 lg:mx-auto mt-12"
           onKeyDown={handleKeyPress}
         >
           <div

@@ -8,7 +8,7 @@ const Ippbx = () => {
   };
   return (
     <div>
-      <div className="m-auto pt-5 max-w-3xl">
+      <div className="pt-5">
         <div className="">
           <div className="flex justify-start items-center mt-5">
             <img src="/images/1.png" alt=""></img>

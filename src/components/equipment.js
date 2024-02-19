@@ -57,17 +57,11 @@ export default function Equipment() {
     });
   };
   return (
-    <div className="bg-white px-12">
+    <div>
       <div className="mx-auto sm:px-1 lg:max-w-7xl lg:px-8">
-        <div className="flex justify-center items-center">
-          <div className="w-10 h-10 border border-solid rounded-full text-white bg-red-500 flex justify-center items-center mr-5">
-            <h1 className="font-extrabold font-mono text-sm  md:text-xl lg:text-2xl">
-              1
-            </h1>
-          </div>
-          <div className="text-2xl text-gray-500 font-semibold">
-            Select your equipment
-          </div>
+        <div className="flex justify-start items-center">
+            <img src="/images/2.png" alt=""></img>
+            <h2 className="text-xl font-bold px-3">Select your equipment</h2>
         </div>
         <div className="flex flex-col sm:flex-row">
           <div className="w-full sm:w-5/6">
