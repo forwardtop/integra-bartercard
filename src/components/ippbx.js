@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Ippbx = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("option1");
 
   const handleSelect = (option) => {
     setSelectedOption(option);
@@ -111,6 +111,7 @@ const Ippbx = () => {
                 <input
                   type="checkbox"
                   className="form-checkbox text-red-500 border-red-500 rounded-full"
+                  value="option1"
                   checked={selectedOption === "option1"}
                   onChange={() => handleSelect("option1")}
                 />
