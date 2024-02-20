@@ -17,8 +17,8 @@ export default function Equipment() {
       imageUrl: `${process.env.PUBLIC_URL}images/tel1.png`,
     },
     {
-      title: "Desktop Phone",
-      imageUrl: `${process.env.PUBLIC_URL}images/tel2.png`,
+      title: "Executive Phone",
+      imageUrl: `${process.env.PUBLIC_URL}images/telephone.png`,
     },
     {
       title: "Cordless",

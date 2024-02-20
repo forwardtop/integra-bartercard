@@ -30,13 +30,13 @@ const GetConnected = () => {
                 </colgroup>
                 <thead>
                   <tr>
-                    <th className="bg-gray-200 p-4 text-left text-[#ed1c24]">
+                    <th className="bg-gray-200 p-4 text-left text-red-500">
                       Foundation
                     </th>
-                    <th className="bg-gray-200 p-4 text-center text-[#ed1c24]">
+                    <th className="bg-gray-200 p-4 text-center text-red-500">
                       Plan
                     </th>
-                    <th className="bg-gray-200 p-4 text-center text-[#ed1c24]">
+                    <th className="bg-gray-200 p-4 text-center text-red-500">
                       Price
                     </th>
                   </tr>
@@ -61,7 +61,7 @@ const GetConnected = () => {
                             Calling Number
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
+                        <div className="mx-2 text-3xl text-red-500">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/uc8icon.png" alt="" />
@@ -72,7 +72,7 @@ const GetConnected = () => {
                             Phone System
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
+                        <div className="mx-2 text-3xl text-red-500">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/linetower.png" alt="" />
@@ -83,7 +83,7 @@ const GetConnected = () => {
                             Unlimited Calling Lines*
                           </p>
                         </div>
-                        <div className="mx-2 text-3xl text-[#ed1c24]">+</div>
+                        <div className="mx-2 text-3xl text-red-500">+</div>
                         <div className="w-1/4 text-center">
                           <div className="flex justify-center">
                             <img src="/images/recruiter.png" alt="" />
@@ -114,68 +114,82 @@ const GetConnected = () => {
               <img src="/images/2.png" alt=""></img>
               <h2 className="text-xl font-bold px-3">Choose Your Device</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="card-item shadow-lg hover:shadow-2xl duration-500 pb-7">
                 <div className="flex justify-center">
-                  <img src="/images/phone1.png" alt="IP cordless" />
+                  <img src="/images/reception.png" alt="Reception Phone" className="h-[100px]" />
                 </div>
                 <div className="text-center mt-2">
-                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
-                    IP Cordless
+                  <span className="bg-gradient-to-r from-red-800 to-red-600 text-white px-2 py-1 rounded-2xl text-xs">
+                    Reception Phone
                   </span>
                 </div>
-                <h5 className="text-center mt-3 text-sm">Model : CP 1500</h5>
-                <p className="text-center text-xs mt-2">
-                  Colour LCD display
+                <p className="text-xs mt-2 lg:pl-8 text-center lg:text-left">
+                  3 Colour LCD display
                   <br />
-                  4-5 day stand-by
+                  166 DSS Keys
                   <br />
-                  3-4 hour talk time
+                  20 lines
                   <br />
-                  Wi-Fi
+                  HD Audio
                   <br />
+                  Built in Bluetooth
+                </p>
+              </div>
+              <div className="card-item shadow-lg hover:shadow-2xl duration-500 pb-7">
+                <div className="flex justify-center">
+                  <img src="/images/telephone.png" alt="Executive Phone" className="h-[100px]"/>
+                </div>
+                <div className="text-center mt-2">
+                  <span className="bg-gradient-to-r from-red-800 to-red-600 text-white px-2 py-1 rounded-2xl text-xs">
+                    Executive Phone
+                  </span>
+                </div>
+                <p className="text-xs mt-2 lg:pl-8 lg:text-left text-center">
+                  2 Colour LCD display
+                  <br />
+                  30 Colour LCD DSSkeys
+                  <br />
+                  500 address book entities <br />
+                  Gigabit 10/100/1000 <br />
                   High definition
                   <br />
+                  Desk or Wall mountable
+                </p>
+              </div>
+
+              <div className="card-item shadow-lg hover:shadow-2xl duration-500 pb-7">
+                <div className="flex justify-center">
+                  <img src="/images/tel3.png" alt="Cordless Phone" className="h-[100px]"/>
+                </div>
+                <div className="text-center mt-2">
+                  <span className="bg-gradient-to-r from-red-800 to-red-600 text-white px-2 py-1 rounded-2xl text-xs">
+                    Cordless Phone
+                  </span>
+                </div>
+                <p className="text-xs mt-2 lg:text-left text-center lg:pl-8">
+                  Colour LCD Display
+                  <br />
+                  4-5 day Stand-by <br />
+                  3-4 hour talk time <br />
+                  Gigabit 10/100/1000
+                  <br />
+                  Wi-Fi <br />
+                  High Definition <br />
                   Charging dock
                 </p>
               </div>
 
               <div className="card-item shadow-lg hover:shadow-2xl duration-500 pb-7">
                 <div className="flex justify-center">
-                  <img src="/images/telephone.png" alt="IP cordless" />
+                  <img src="/images/pad.png" alt="Softphone" className="h-[100px]"/>
                 </div>
-                <div className="text-center">
-                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
-                    IP Handset
+                <div className="text-center mt-2">
+                  <span className="bg-gradient-to-r from-red-800 to-red-600 text-white px-2 py-1 rounded-2xl text-xs">
+                    Softphone
                   </span>
                 </div>
-                <h5 className="text-center mt-3 text-sm">Model : IP 2000</h5>
-                <p className="text-center text-xs mt-2">
-                  Colour LCD disp
-                  <br />
-                  30 Colour LCD dSS key
-                  <br />
-                  500 dddress book pages
-                  <br />
-                  Gigabit 10/100/1000
-                  <br />
-                  High definition
-                  <br />
-                  Desk or wall mountable
-                </p>
-              </div>
-
-              <div className="card-item shadow-lg hover:shadow-2xl duration-500 pb-7">
-                <div className="flex justify-center">
-                  <img src="/images/pad.png" alt="IP cordless" />
-                </div>
-                <div className="text-center">
-                  <span className="bg-[#ed1c24] text-white px-2 py-1 rounded-2xl text-xs">
-                    IP Softphone
-                  </span>
-                </div>
-                <h5 className="text-center mt-3 text-sm">Model : SP 8000</h5>
-                <p className="text-center text-xs mt-2">
+                <p className="text-center lg:text-left lg:pl-8 text-xs mt-2">
                   USB Headset
                   <br />
                   Softphone No hardware
@@ -201,7 +215,7 @@ const GetConnected = () => {
                 <table className="lg:w-full border-collapse border border-white">
                   <thead>
                     <tr className="bg-gray-100">
-                      <th className="border border-white p-3 text-[#ed1c24]">
+                      <th className="border border-white p-3 text-red-500">
                         <div className="flex justify-start items-center text-sm">
                           <img
                             src="/images/term.svg"
@@ -211,13 +225,13 @@ const GetConnected = () => {
                           &nbsp; &nbsp;&nbsp;Contract Term
                         </div>
                       </th>
-                      <th className="border border-white p-3 text-sm text-[#ed1c24]">
+                      <th className="border border-white p-3 text-sm text-red-500">
                         Setup<br></br>
                         <span className="text-xs text-gray-900 font-thin">
                           Per Device
                         </span>
                       </th>
-                      <th className="border border-white p-3 text-sm text-[#ed1c24]">
+                      <th className="border border-white p-3 text-sm text-red-500">
                         Delivery<br></br>
                         <span className="text-xs text-gray-900 font-thin">
                           Per Device
@@ -362,7 +376,7 @@ const GetConnected = () => {
                     H400
                   </td>
                 </tr>
-                <tr className="bg-gray-100 text-[#ed1c24]">
+                <tr className="bg-gray-100 text-red-500">
                   <td className="border border-white p-1 ">
                     <div className="flex items-center">
                       <div className="px-3">
@@ -379,7 +393,7 @@ const GetConnected = () => {
                     <table className="w-full border-collapse border border-white">
                       <thead></thead>
                       <tbody>
-                        <tr className="bg-gray-100 text-[#ed1c24]">
+                        <tr className="bg-gray-100 text-red-500">
                           <td className="border border-white text-center p-1 w-1/3">
                             Rate
                           </td>
@@ -395,7 +409,7 @@ const GetConnected = () => {
                   </td>
                   <td className="bg-gray-100">
                     <table className="w-full border-collapse border border-white">
-                      <tr className="bg-gray-100 text-[#ed1c24]">
+                      <tr className="bg-gray-100 text-red-500">
                         <td className="border border-white text-center p-1 w-1/3">
                           Rate
                         </td>
@@ -410,7 +424,7 @@ const GetConnected = () => {
                   </td>
                   <td className="bg-gray-100">
                     <table className="w-full border-collapse border border-white">
-                      <tr className="bg-gray-100 text-[#ed1c24]">
+                      <tr className="bg-gray-100 text-red-500">
                         <td className="border border-white text-center p-1 w-1/3">
                           Rate
                         </td>
@@ -682,7 +696,7 @@ const GetConnected = () => {
                     Minimum call charge1c. All Prices are inclusive of GST.
                   </td>
                 </tr>
-                <tr className="bg-gray-100 text-[#ed1c24]">
+                <tr className="bg-gray-100 text-red-500">
                   <td className="border border-white p-1" colSpan={2}>
                     <div className="flex items-center">
                       <div className="px-3">
@@ -696,14 +710,14 @@ const GetConnected = () => {
                     </div>
                   </td>
                   <td className="bg-gray-100">
-                    <tr className="bg-gray-100 text-[#ed1c24]">
+                    <tr className="bg-gray-100 text-red-500">
                       <td className="border border-white text-center p-1 w-1/3">
                         Plan
                       </td>
                     </tr>
                   </td>
                   <td className="bg-gray-100">
-                    <tr className="bg-gray-100 text-[#ed1c24]">
+                    <tr className="bg-gray-100 text-red-500">
                       <td className="border border-white text-center p-1 w-1/3">
                         Price
                       </td>

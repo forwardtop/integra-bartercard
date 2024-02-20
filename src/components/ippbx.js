@@ -8,13 +8,13 @@ const Ippbx = () => {
   };
   return (
     <div>
-      <div className="pt-5">
-        <div className="">
+      <div className="pt-5 lg:min-w-[800px]">
+        <div className="w-full min-w-fit">
           <div className="flex justify-start items-center mt-5">
             <img src="/images/1.png" alt=""></img>
             <h2 className="text-xl font-bold px-3">Get Connected</h2>
           </div>
-          <div className="w-full overflow-x-auto">
+          <div className="w-full overflow-x-auto mt-6">
             <table
               className="lg:w-full"
               style={{ borderCollapse: "separate", borderSpacing: "2px" }}
