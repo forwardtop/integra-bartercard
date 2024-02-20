@@ -37,6 +37,10 @@ const OrderProcess = () => {
   const { upfrontCost } = useContext(AuthContext);
   const { selectedTerm } = useContext(AuthContext);
   const { deliveryFee } = useContext(AuthContext);
+  const { totalSetup } = useContext(AuthContext);
+  const { totalUpfrontCost } = useContext(AuthContext);
+  const { seatLicense } = useContext(AuthContext);
+  const { totalMonthlyCost } = useContext(AuthContext);
 
   console.log(terms);
 
@@ -116,7 +120,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Setup cost</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ {totalSetup}
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -146,7 +150,7 @@ const OrderProcess = () => {
                 </div>
                 <div className="bg-red-100 flex justify-between">
                   <h2 className=" px-5 text-red-500  font-bold">Total</h2>
-                  <h2 className="text-red-500  font-bold pr-2">$ 174</h2>
+                  <h2 className="text-red-500  font-bold pr-2">$ {totalUpfrontCost}</h2>
                 </div>
               </div>
               <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">
@@ -160,9 +164,9 @@ const OrderProcess = () => {
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-sm pl-5">H200 - UC8 Seat Licence</p>
+                  <p className="text-sm pl-5">H200 - UC8 Seat License</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 100
+                    $ {seatLicense}
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -198,7 +202,7 @@ const OrderProcess = () => {
                 </div>
                 <div className="bg-red-100 flex justify-between">
                   <h2 className=" px-5 text-red-500  font-bold">Total</h2>
-                  <h2 className="text-red-500  font-bold pr-2">$ 347</h2>
+                  <h2 className="text-red-500  font-bold pr-2">$ {totalMonthlyCost}</h2>
                 </div>
               </div>
               <div className="w-full border-gray-500 border border-solid rounded-md overflow-hidden">

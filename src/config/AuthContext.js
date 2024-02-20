@@ -31,8 +31,11 @@ export const AuthProvider = ({ children }) => {
   const [upfrontCost, setUpfrontCost] = useState("0");
   const [selectedTerm, setSelectedTerm] = useState("0");
   const [selectedSetup, setSelectedSetup] = useState("0");
-  const [totalSetup, setTotalSetup] = useState("");
+  const [totalSetup, setTotalSetup] = useState("0");
   const [deliveryFee, setDeliveryFee] = useState("0");
+  const [totalUpfrontCost, setTotalUpfrontCost] = useState("0");
+  const [seatLicense, setSeatLicense] = useState("0");
+  const [totalMonthlyCost, setTotalMonthlyCost] = useState("0");
   
  
 
@@ -89,6 +92,12 @@ export const AuthProvider = ({ children }) => {
     setTotalSetup,
     deliveryFee,
     setDeliveryFee,
+    totalUpfrontCost,
+    setTotalUpfrontCost,
+    seatLicense,
+    setSeatLicense,
+    totalMonthlyCost,
+    setTotalMonthlyCost,
   };
   return  <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>;
 };

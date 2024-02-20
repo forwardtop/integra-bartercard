@@ -2,7 +2,21 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../config/AuthContext";
 
 function ContactTerm() {
-  const { total, selectedTerm, setSelectedTerm, selectedSetup, setSelectedSetup, totalSetup, setTotalSetup, setDeliveryFee } = useContext(AuthContext);
+  const {
+    total,
+    selectedTerm,
+    setSelectedTerm,
+    selectedSetup,
+    setSelectedSetup,
+    totalSetup,
+    setTotalSetup,
+    setDeliveryFee,
+    deliveryFee,
+    setTotalUpfrontCost,
+    seatLicense,
+    setSeatLicense,
+    setTotalMonthlyCost
+  } = useContext(AuthContext);
   const [selectedRow, setSelectedRow] = useState(null);
 
   const contractTerms = [
@@ -45,12 +59,13 @@ function ContactTerm() {
       setSelectedRow(index);
       setSelectedTerm(contractTerms[index].term);
       setSelectedSetup(contractTerms[index].setup);
-      setTotalSetup(total * contractTerms[index].setup);
-      setDeliveryFee("25");
+      setDeliveryFee(25);
+      setTotalSetup(total * selectedSetup);
+      setTotalUpfrontCost(deliveryFee + totalSetup);
+      setSeatLicense(total * 10);
+      setTotalMonthlyCost(seatLicense);
     }
   };
-  
-
 
   return (
     <div className="bg-white text-center">
@@ -137,9 +152,12 @@ function ContactTerm() {
         </div>
         <div className="flex justify-around items-center mt-5">
           <h2 className="text-red-500 font-extrabold">Contact Term : </h2>
-          <h3 className="text-red-500"><b>Term</b> = {selectedTerm} Months</h3>
           <h3 className="text-red-500">
-            <b>Setup</b> = <b>{total}</b> X {selectedSetup} = $ <b>{totalSetup}</b>
+            <b>Term</b> = {selectedTerm} Months
+          </h3>
+          <h3 className="text-red-500">
+            <b>Setup</b> = <b>{total}</b> X {selectedSetup} = ${" "}
+            <b>{totalSetup}</b>
           </h3>
         </div>
       </div>
