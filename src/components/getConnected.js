@@ -99,7 +99,7 @@ const GetConnected = () => {
                     <td className="p-4 text-center bg-gray-300">
                       <div className="flex flex-col items-center">
                         <br />
-                        <div className="font-bold text-4xl">$29</div>
+                        <div className="text-2xl">$ <span className="font-bold text-4xl">39</span></div>
                         <div className="text-xl">per month</div>
                       </div>
                     </td>
