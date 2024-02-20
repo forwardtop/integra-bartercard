@@ -4,7 +4,7 @@ const Step4 = () => {
   return (
     <div className="mt-24 flex justify-center items-center">
       <div className="text-center">
-        <h2 className="text-6xl font-semibold mb-4 text-red-500">Thank you for your ordering</h2>
+        <h2 className="text-6xl font-semibold mb-4 text-red-500">Thank you for your order</h2>
         <p className="text-3xl p-10">Your request has been submitted</p>
         <div className="flex justify-center items-center">
         <button onClick={() => (window.location.href = "/")} style={{borderRadius:'1.75rem'}}

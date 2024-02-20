@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../config/AuthContext";
 
 function ContactTerm() {
@@ -15,7 +15,7 @@ function ContactTerm() {
     setTotalUpfrontCost,
     seatLicense,
     setSeatLicense,
-    setTotalMonthlyCost
+    setTotalMonthlyCost,
   } = useContext(AuthContext);
   const [selectedRow, setSelectedRow] = useState(null);
 
@@ -60,12 +60,23 @@ function ContactTerm() {
       setSelectedTerm(contractTerms[index].term);
       setSelectedSetup(contractTerms[index].setup);
       setDeliveryFee(25);
-      setTotalSetup(total * selectedSetup);
-      setTotalUpfrontCost(deliveryFee + totalSetup);
-      setSeatLicense(total * 10);
-      setTotalMonthlyCost(seatLicense);
     }
   };
+  useEffect(() => {
+    setTotalSetup(total * selectedSetup);
+  }, [total, selectedSetup, setTotalSetup]);
+
+  useEffect(() => {
+    setTotalUpfrontCost(deliveryFee + totalSetup);
+  }, [deliveryFee, totalSetup, setTotalUpfrontCost]);
+
+  useEffect(() => {
+    setSeatLicense(total * 10);
+  }, [total, setSeatLicense]);
+
+  useEffect(() => {
+    setTotalMonthlyCost(seatLicense);
+  }, [seatLicense, setTotalMonthlyCost]);
 
   return (
     <div className="bg-white text-center">
