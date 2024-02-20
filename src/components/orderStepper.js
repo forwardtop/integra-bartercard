@@ -114,7 +114,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Total phone hardware cost</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -126,14 +126,14 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Number porting fee</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ 0
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Professional installation</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -145,7 +145,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">NBN Installation Fee</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ 0
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
@@ -160,7 +160,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">H100 - UC8 Foundation Cost</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 39
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -179,25 +179,25 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">S100 - UC8 SLA Support Agreement</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 50
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">C100 - UC8 Connection Pack</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 39
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">N100 - National Number</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 20
+                    $ 0
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">B520 - UC8 NBN+Voip Tail 100/20</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 99
+                    $ 0
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
