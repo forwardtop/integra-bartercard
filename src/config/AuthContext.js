@@ -37,6 +37,8 @@ export const AuthProvider = ({ children }) => {
   const [seatLicense, setSeatLicense] = useState("0");
   const [totalMonthlyCost, setTotalMonthlyCost] = useState("0");
   const [currentNumberCost, setCurrentNumberCost] = useState("0");
+  const [planCode, setPlanCode] = useState("");
+  const [callingLineUltimateCost, setCallingLineUltimateCost] = useState("");
   
  
 
@@ -101,6 +103,10 @@ export const AuthProvider = ({ children }) => {
     setTotalMonthlyCost,
     currentNumberCost,
     setCurrentNumberCost,
+    planCode,
+    setPlanCode,
+    callingLineUltimateCost,
+    setCallingLineUltimateCost,
   };
   return  <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>;
 };

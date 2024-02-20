@@ -5,8 +5,6 @@ const Ippbx = () => {
   const [selectedOption, setSelectedOption] = useState(0);
   const {
     setCurrentNumberCost,
-    currentNumberCost,
-    setTotalUpfrontCost
   } = useContext(AuthContext);
   const handleSelect = (option) => {
     setSelectedOption(option);
@@ -14,9 +12,6 @@ const Ippbx = () => {
   useEffect(() => {
     setCurrentNumberCost(selectedOption);
   }, [selectedOption, setCurrentNumberCost]);
-  useEffect(() => {
-    setTotalUpfrontCost(currentNumberCost);
-  }, [currentNumberCost, setTotalUpfrontCost]);
   
   return (
     <div>

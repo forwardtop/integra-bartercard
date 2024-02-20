@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Step1 from "./../components/step1";
 import Step2 from "./../components/step2";
 import Step3 from "./../components/step3";
@@ -8,42 +8,41 @@ import Step4 from "../components/step4";
 import Equipment from "./equipment";
 import Ippbx from "./ippbx";
 import ContactTerm from "./contactTerm";
+import SelectYourPlan from "./selectYourPlan";
 
 const steps = [
   { id: 1, component: Step1 },
   { id: 2, component: Step2 },
   { id: 3, component: Step3 },
+  { id: 4, component: Step4 },
 ];
 
 const OrderProcess = () => {
   const [step, setStep] = useState(1);
+  const { 
+    setShowValidationMessage,
+    total,
+    receptionPhone,
+    desktopPhone,
+    cordlessPhone,
+    softPhone,
+    upfrontCost,
+    selectedTerm,
+    deliveryFee,
+    totalSetup,
+    totalUpfrontCost,
+    seatLicense,
+    totalMonthlyCost,
+    setTotalMonthlyCost,
+    currentNumberCost,
+    planCode,
+    callingLineUltimateCost,
+  } = useContext(AuthContext);
+  
 
-  //   const { email } = useContext(AuthContext);
-  //   const { firstName } = useContext(AuthContext);
-  //   const { lastName } = useContext(AuthContext);
-  //   const { phoneNumber } = useContext(AuthContext);
-  //   const { country } = useContext(AuthContext);
-  //   const { primary } = useContext(AuthContext);
-  //   const { company } = useContext(AuthContext);
-  //   const { employee } = useContext(AuthContext);
-  //   const { isValidEmail } = useContext(AuthContext);
-  const { setShowValidationMessage } = useContext(AuthContext);
-  const { total } = useContext(AuthContext);
-  const { receptionPhone } = useContext(AuthContext);
-  const { desktopPhone } = useContext(AuthContext);
-  const { cordlessPhone } = useContext(AuthContext);
-  const { softPhone } = useContext(AuthContext);
-  const { terms } = useContext(AuthContext);
-  const { upfrontCost } = useContext(AuthContext);
-  const { selectedTerm } = useContext(AuthContext);
-  const { deliveryFee } = useContext(AuthContext);
-  const { totalSetup } = useContext(AuthContext);
-  const { totalUpfrontCost } = useContext(AuthContext);
-  const { seatLicense } = useContext(AuthContext);
-  const { totalMonthlyCost } = useContext(AuthContext);
-  const { currentNumberCost } = useContext(AuthContext);
-
-  console.log(terms);
+  useEffect(() => {
+    setTotalMonthlyCost(callingLineUltimateCost + seatLicense);
+  }, [seatLicense, callingLineUltimateCost, setTotalMonthlyCost]);
 
   const handleNext = () => {
     setShowValidationMessage(true);
@@ -64,6 +63,9 @@ const OrderProcess = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row  font-gothic">
+
+        {/* Section 1: Your Order Section */}
+      
         <div className="text-center bg-gray-100 lg:w-1/4">
           <div className="flex flex-col items-center justify-center mt-3">
             <div className=" bg-red-500 w-full lg:w-2/3">
@@ -171,9 +173,9 @@ const OrderProcess = () => {
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-sm pl-5">H200 - UC8 Calling Plan - PAYG</p>
+                  <p className="text-sm pl-5">H400 - UC8 Calling Plan - Ultimate</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    TBA
+                   $ {callingLineUltimateCost}
                   </span>
                 </div>
                 
@@ -217,7 +219,7 @@ const OrderProcess = () => {
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-sm pl-5">Calling Plan</p>
+                  <p className="text-sm pl-5">Calling Plan = {planCode}</p>
                   <span className="text-gray-700 font-bold pr-2">
                   
                   </span>
@@ -229,7 +231,7 @@ const OrderProcess = () => {
 
         {/* Section 2: Quote Request Form */}
         <div
-          className="flex flex-col items-center mx-1 lg:mx-auto mt-12"
+          className="flex flex-col items-center m-auto"
           onKeyDown={handleKeyPress}
         >
           <div
@@ -266,12 +268,20 @@ const OrderProcess = () => {
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {step === 4 && <Step4 />}
+            {step === 4 && <SelectYourPlan />}
           </div>
-
           <div
-            className={`flex flex-col justify-between mt-16 ${
-              step === 4 ? "hidden" : "block"
+            className={`transition-transform duration-500 ${
+              step === 5
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-full"
+            }`}
+          >
+            {step === 5 && <Step4 />}
+          </div>
+          <div
+            className={`flex flex-col justify-between mt-5 ${
+              step === 5 ? "hidden" : "block"
             }`}
           >
             <div className="mb-4">
