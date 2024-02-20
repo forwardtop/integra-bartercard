@@ -7,6 +7,7 @@ import { AuthContext } from "../config/AuthContext";
 import Step4 from "../components/step4";
 import Equipment from "./equipment";
 import Ippbx from "./ippbx";
+import ContactTerm from "./contactTerm";
 
 const steps = [
   { id: 1, component: Step1 },
@@ -34,6 +35,8 @@ const OrderProcess = () => {
   const { softPhone } = useContext(AuthContext);
   const { terms } = useContext(AuthContext);
   const { upfrontCost } = useContext(AuthContext);
+  const { selectedTerm } = useContext(AuthContext);
+  const { deliveryFee } = useContext(AuthContext);
 
   console.log(terms);
 
@@ -132,7 +135,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Delivery fee</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ {upfrontCost}
+                    $ {deliveryFee}
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -203,7 +206,7 @@ const OrderProcess = () => {
                   <h2 className=" px-5 text-red-500  font-bold">Plan Details</h2>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-sm pl-5">Terms - 36 Months</p>
+                  <p className="text-sm pl-5">Terms - {selectedTerm} Months</p>
                   <span className="text-gray-700 font-bold pr-2">
                   
                   </span>
@@ -249,7 +252,7 @@ const OrderProcess = () => {
                 : "opacity-0 translate-x-full"
             }`}
           >
-            {step === 3 && <Step3 />}
+            {step === 3 && <ContactTerm />}
           </div>
           <div
             className={`transition-transform duration-500 ${

@@ -29,6 +29,10 @@ export const AuthProvider = ({ children }) => {
   const [softPhone, setSoftPhone] = useState("0");
   const [terms, setTerms] = useState("0");
   const [upfrontCost, setUpfrontCost] = useState("0");
+  const [selectedTerm, setSelectedTerm] = useState("0");
+  const [selectedSetup, setSelectedSetup] = useState("0");
+  const [totalSetup, setTotalSetup] = useState("");
+  const [deliveryFee, setDeliveryFee] = useState("0");
   
  
 
@@ -76,7 +80,15 @@ export const AuthProvider = ({ children }) => {
     terms,
     setTerms,
     upfrontCost,
-    setUpfrontCost
+    setUpfrontCost,
+    selectedTerm,
+    setSelectedTerm,
+    selectedSetup,
+    setSelectedSetup,
+    totalSetup,
+    setTotalSetup,
+    deliveryFee,
+    setDeliveryFee,
   };
   return  <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>;
 };
