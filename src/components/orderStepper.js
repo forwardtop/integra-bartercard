@@ -145,7 +145,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">NBN Installation Fee</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 0
+                    $ {upfrontCost}
                   </span>
                 </div>
                 <div className="bg-red-100 flex justify-between">
