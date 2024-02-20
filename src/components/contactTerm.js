@@ -16,6 +16,7 @@ function ContactTerm() {
     seatLicense,
     setSeatLicense,
     setTotalMonthlyCost,
+    currentNumberCost
   } = useContext(AuthContext);
   const [selectedRow, setSelectedRow] = useState(null);
 
@@ -67,8 +68,8 @@ function ContactTerm() {
   }, [total, selectedSetup, setTotalSetup]);
 
   useEffect(() => {
-    setTotalUpfrontCost(deliveryFee + totalSetup);
-  }, [deliveryFee, totalSetup, setTotalUpfrontCost]);
+    setTotalUpfrontCost(deliveryFee + totalSetup + currentNumberCost);
+  }, [deliveryFee, totalSetup, setTotalUpfrontCost, currentNumberCost]);
 
   useEffect(() => {
     setSeatLicense(total * 10);

@@ -41,6 +41,7 @@ const OrderProcess = () => {
   const { totalUpfrontCost } = useContext(AuthContext);
   const { seatLicense } = useContext(AuthContext);
   const { totalMonthlyCost } = useContext(AuthContext);
+  const { currentNumberCost } = useContext(AuthContext);
 
   console.log(terms);
 
@@ -126,7 +127,7 @@ const OrderProcess = () => {
                 <div className="flex justify-between">
                   <p className="text-sm pl-5">Number porting fee</p>
                   <span className="text-gray-700 font-bold pr-2">
-                    $ 0
+                    $ {currentNumberCost}
                   </span>
                 </div>
                 
