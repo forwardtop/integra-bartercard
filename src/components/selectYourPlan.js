@@ -32,8 +32,9 @@ const SelectYourPlan = () => {
         <img src="/images/4.png" alt=""></img>
         <h2 className="text-xl font-bold px-3">Select Your Call Plan</h2>
       </div>
-      <div className="flex justify-around">
-        <table className="w-full">
+      <div className="flex justify-around flex-col lg:flex-row">
+      <div>
+      <table className="w-full">
           <thead>
             <tr className="bg-gray-300">
               <th className="border border-white p-3 text-sm "></th>
@@ -538,6 +539,8 @@ const SelectYourPlan = () => {
                 </tr> */}
           </tbody>
         </table>
+      </div>
+        
         <div className="flex flex-col justify-end items-start ml-12">
           <h2 className="text-2xl text-red-500 font-bold">Calling Lines</h2>
           <h2 className="text-xl font-poppins">

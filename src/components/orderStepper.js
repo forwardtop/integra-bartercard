@@ -66,7 +66,7 @@ const OrderProcess = () => {
 
         {/* Section 1: Your Order Section */}
       
-        <div className="text-center bg-gray-100 lg:w-1/4">
+        <div className="text-center bg-gray-100 lg:w-1/4 lg:min-w-[500px]">
           <div className="flex flex-col items-center justify-center mt-3">
             <div className=" bg-red-500 w-full lg:w-2/3">
               <h1 className="text-2xl md:text-xl font-bold text-white px-2">

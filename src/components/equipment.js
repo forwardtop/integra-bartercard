@@ -71,7 +71,7 @@ export default function Equipment() {
                   key={index}
                   className="p-4 flex flex-col items-center border border-solid  rounded-xl  shadow-xl shadow-gray-300 hover:shadow-gray-500 hover:duration-500"
                 >
-                  <div className="text-sm text-center bg-red-500 border rounded-full py-2 px-6 text-white h-10 flex items-center ">
+                  <div className="bg-gradient-to-r from-red-800 to-red-600 text-white px-2 py-1 rounded-2xl text-xs">
                     {card.title}
                   </div>
                   <img
@@ -103,7 +103,7 @@ export default function Equipment() {
           </div>
           <div className="w-full sm:w-1/6 flex flex-col justify-end text-center">
             <div className="text-red-500 text-2xl font-extrabold">
-              ={nTel.reduce((acc, curr) => acc + curr, 0)} Seats
+              =  {nTel.reduce((acc, curr) => acc + curr, 0)} Seats
             </div>
           </div>
         </div>
