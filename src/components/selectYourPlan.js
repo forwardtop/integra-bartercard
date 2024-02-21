@@ -557,16 +557,16 @@ const SelectYourPlan = () => {
           <div className="flex justify-between items-center border border-solid border-gray-300 rounded-2xl mt-5">
             <button
               onClick={() => handleDecrement()}
-              className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-500 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"
+              className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-700 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"
             >
               -
             </button>
-            <p className="w-10 text-center text-xl text-red-500 font-bold">
+            <p className="w-10 text-center text-xl text-red-700 font-bold">
               {numberLines}
             </p>
             <button
               onClick={() => handleIncrement()}
-              className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-500 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"
+              className="flex items-center justify-center w-7 h-7 rounded-full border bg-red-700 hover:bg-white hover:text-red-500 hover:border-red-500 text-white"
             >
               +
             </button>
