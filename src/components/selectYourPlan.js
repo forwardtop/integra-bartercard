@@ -544,7 +544,7 @@ const SelectYourPlan = () => {
         <div className="flex flex-col justify-end items-start ml-12">
           <h2 className="text-2xl text-red-500 font-bold">Calling Lines</h2>
           <h2 className="text-xl font-poppins">
-            How many calling lines do you want with ultimate included call
+            How many calling lines do you want<br></br> with ultimate included call
             value?
           </h2>
           <br></br>
