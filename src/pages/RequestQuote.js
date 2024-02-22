@@ -8,7 +8,6 @@ import axios from "axios";
 import Step4 from "../components/step4";
 import Footer from "../components/footer";
 import BreadCrumbsBar from "../components/breadCrumbsBar";
-// import axios from "axios";
 
 const steps = [
   { id: 1, component: Step1 },
@@ -57,7 +56,7 @@ const RequestQuote = () => {
         }
         console.log('data:', data);
 
-        axios.post('https://uc8.au/email/index.php', data).then(res => {
+        axios.post('https://uc8.au/email/index.py', data).then(res => {
           console.log('result:', res.data);
         })
         .catch(error => {
