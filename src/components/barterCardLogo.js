@@ -1,6 +1,6 @@
 import React from "react";
 import logoSrc from "./../assets/Bartercard_logo.jpg";
-import { Box, Typography, Container, Grid } from "@mui/material";
+import { Typography, Container, Grid } from "@mui/material";
 
 // This component renders a centered title with a logo on the right using MUI
 const BarterCardLogo = () => {
