@@ -8,7 +8,7 @@ const BarterCardLogo = () => {
     <Container maxWidth="xl">
       <Grid container alignItems="center" justifyContent="center" spacing={2}>
         {/* Title Section */}
-        <Grid item xs={12} md={11} sx={{ textAlign: "center" }}>
+        <Grid item xs={12} md={10} sx={{ textAlign: "center" }}>
           <Typography variant="h4" component="h1" sx={{ color: "#a6ce37" }}>
             Use Bartercard for your communication needs
           </Typography>
@@ -18,7 +18,7 @@ const BarterCardLogo = () => {
         <Grid
           item
           xs={12}
-          md={1}
+          md={2}
           sx={{ display: "flex", justifyContent: "center" }}
         >
           <img
