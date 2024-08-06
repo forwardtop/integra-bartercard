@@ -1,21 +1,34 @@
 import React from "react";
 import logoSrc from "./../assets/Bartercard_logo.jpg";
+import { Box, Typography, Container, Grid } from "@mui/material";
 
-// This component takes two props: title and logoSrc
+// This component renders a centered title with a logo on the right using MUI
 const BarterCardLogo = () => {
   return (
-    <div className="flex items-center justify-between p-4 bg-white shadow-md">
-      {/* Centered title */}
-      <h1 className="text-[#a6ce37] text-4xl mx-auto">
-        Use Bartercard for your communication needs
-      </h1>
-      {/* Logo image on the right */}
-      <img
-        src={logoSrc}
-        alt="Logo"
-        className="w-24 h-24 object-contain ml-auto"
-      />
-    </div>
+    <Container maxWidth="xl">
+      <Grid container alignItems="center" justifyContent="center" spacing={2}>
+        {/* Title Section */}
+        <Grid item xs={12} md={11} sx={{ textAlign: "center" }}>
+          <Typography variant="h4" component="h1" sx={{ color: "#a6ce37" }}>
+            Use Bartercard for your communication needs
+          </Typography>
+        </Grid>
+
+        {/* Logo Section */}
+        <Grid
+          item
+          xs={12}
+          md={1}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <img
+            src={logoSrc}
+            alt="Logo"
+            style={{ width: "10rem", height: "10rem", objectFit: "contain" }}
+          />
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
