@@ -164,6 +164,26 @@ export default function Menu() {
                 Contact
               </a>
             </li>
+            <li>
+              <a
+                href="/about-us"
+                className={`${
+                  isActive("/about-us") ? "font-bold text-red-500" : ""
+                }`}
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/bartercard"
+                className={`${
+                  isActive("/bartercard") ? "font-bold text-red-500" : ""
+                }`}
+              >
+                BarterCard
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -236,6 +256,7 @@ export default function Menu() {
             >
               Shop
             </a>
+
             <a
               href="/contact"
               className={`text-2xl mb-5 ${
@@ -243,6 +264,22 @@ export default function Menu() {
               }`}
             >
               Contact
+            </a>
+            <a
+              href="/about-us"
+              className={`text-2xl mb-5 ${
+                isActive("/about-us") ? "font-bold text-red-500" : ""
+              }`}
+            >
+              About Us
+            </a>
+            <a
+              href="/bartercard"
+              className={`text-2xl mb-5 ${
+                isActive("/bartercard") ? "font-bold text-red-500" : ""
+              }`}
+            >
+              About Us
             </a>
           </div>
         </div>
