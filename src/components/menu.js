@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import LogoImage from './../assets/logo.png'
+import LogoImage from "./../assets/logo.png";
 export default function Menu() {
   const productItemsData = [
     {
@@ -63,43 +63,43 @@ export default function Menu() {
       <div className="">
         <div>
           <ul className="hidden lg:flex space-x-4 lg:space-x-8 mt-4">
-            <li
-              className="flex justify-center items-center relative"
-            >
+            <li className="flex justify-center items-center relative">
               <div className="mx-auto flex w-full items-center justify-center">
                 <div className="group relative cursor-pointer">
                   <div className="flex items-center justify-between space-x-1 bg-white">
-                      <a
-                        href="/products"
-                        className={`menu-hover text-base font-medium ${isActive("/products") ? "text-red-500" : "text-gray-500"}`}
-                        >
-                        Products
-                      </a>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="h-4 w-4"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                        />
-                      </svg>
+                    <a
+                      href="/products"
+                      className={`menu-hover text-base font-medium ${
+                        isActive("/products") ? "text-red-500" : "text-gray-500"
+                      }`}
+                    >
+                      Products
+                    </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
                   </div>
                   <div className="invisible text-sm absolute z-50 flex w-48 flex-col text-gray-800 shadow-xl group-hover:visible bg-white">
-                  {productItemsData.map((item, index) => (
-                    <a
-                      key={index}
-                      href={`/products/${item.url}`}
-                      className="my-2 block border-b py-1 font-semibold text-gray-500 hover:text-red-500 md:mx-2"
-                    >
-                      {item.title}
-                    </a>
-                  ))}
+                    {productItemsData.map((item, index) => (
+                      <a
+                        key={index}
+                        href={`/products/${item.url}`}
+                        className="my-2 block border-b py-1 font-semibold text-gray-500 hover:text-red-500 md:mx-2"
+                      >
+                        {item.title}
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -187,15 +187,15 @@ export default function Menu() {
             >
               Products
             </a>
-                {productItemsData.map((item, index) => (
-                <a
-                    key={index}
-                    href={`/product/${item.url}`}
-                    className="py-1 font-semibold text-gray-500 hover:text-red-500 md:mx-2"
-                >
-                    {item.title}
-                </a>
-                ))}
+            {productItemsData.map((item, index) => (
+              <a
+                key={index}
+                href={`/product/${item.url}`}
+                className="py-1 font-semibold text-gray-500 hover:text-red-500 md:mx-2"
+              >
+                {item.title}
+              </a>
+            ))}
             <a
               href="/solution"
               className={`text-2xl mb-5 ${
@@ -251,13 +251,13 @@ export default function Menu() {
       <div className="flex mt-5 lg:min-w-[300px] min-w-[250px]">
         <button
           onClick={() => history.push(`/request-quote`)}
-          className="flex items-center justify-center w-1/2 h-10 rounded-l-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
+          className="flex items-center duration-500 justify-center w-1/2 h-10 rounded-l-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
         >
           Request a Quote
         </button>
         <button
           onClick={() => history.push(`/contact`)}
-          className="flex items-center justify-center w-1/2 h-10 rounded-r-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
+          className="flex items-center duration-500 justify-center w-1/2 h-10 rounded-r-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
         >
           Get Connected
         </button>

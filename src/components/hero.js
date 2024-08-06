@@ -12,15 +12,18 @@ export default function Hero() {
         content="UC8 offers hosted IPPBX business phone systems with no upfront hardware cost, customizable voice plans, and local hosting in Australia. Request a quote today."
       />
 
-      <div className="lg:px-16 min-h-[1000px] lg:min-h-[800px]" style={{
-        position: "relative",
-        background:
-          "url(/images/telechargementIcon.png) no-repeat bottom center, linear-gradient(to bottom, #87acc7 42%, #e9f2f6 95%)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "bottom center",
-        display: "inline-block",
-        width: "100%",
-      }}>
+      <div
+        className="lg:px-16 min-h-[1000px] lg:min-h-[800px]"
+        style={{
+          position: "relative",
+          background:
+            "url(/images/telechargementIcon.png) no-repeat bottom center, linear-gradient(to bottom, #87acc7 42%, #e9f2f6 95%)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom center",
+          display: "inline-block",
+          width: "100%",
+        }}
+      >
         <div className="lg:mx-36 flex flex-col xl:flex-row justify-center items-center mt-5">
           <div className="text-center lg:p-32">
             <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -47,7 +50,7 @@ export default function Hero() {
               <button
                 onClick={() => history.push(`/contact`)}
                 style={{ borderRadius: "1.75rem" }}
-                className="flex items-center justify-center w-44 h-10 rounded-full border border-solid border-red-500 bg-red-500 hover:bg-transparent hover:text-red-500 hover:border-red-500 text-white"
+                className="flex items-center duration-500 justify-center w-44 h-10 rounded-full border border-solid border-red-500 bg-red-500 hover:bg-transparent hover:text-red-500 hover:border-red-500 text-white"
               >
                 Get Contacted
               </button>
