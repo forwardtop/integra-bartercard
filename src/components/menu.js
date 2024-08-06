@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import LogoImage from "./../assets/logo.png";
 export default function Menu() {
   const productItemsData = [
@@ -38,7 +38,6 @@ export default function Menu() {
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const history = useHistory();
   const location = useLocation();
 
   const toggleMenu = () => {
@@ -50,19 +49,15 @@ export default function Menu() {
   };
 
   return (
-    <div className="container mx-auto flex justify-between items-center">
-      <div className="text-xl font-bold">
+    <div className="flex items-center">
+      <div className="w-2/12">
         <a href="/" className="min-w-fit">
-          <img
-            className="hidden lg:flex h-20 w-full"
-            src={LogoImage}
-            alt="uc8 logo"
-          />
+          <img className="lg:flex lg:h-20" src={LogoImage} alt="uc8 logo" />
         </a>
       </div>
-      <div className="">
+      <div className="w-10/12 flex justify-center">
         <div>
-          <ul className="hidden lg:flex space-x-4 lg:space-x-8 mt-4">
+          <ul className="hidden lg:flex xl:space-x-8 lg:space-x-4 mt-4">
             <li className="flex justify-center items-center relative">
               <div className="mx-auto flex w-full items-center justify-center">
                 <div className="group relative cursor-pointer">
@@ -279,26 +274,11 @@ export default function Menu() {
                 isActive("/bartercard") ? "font-bold text-red-500" : ""
               }`}
             >
-              About Us
+              BarterCard
             </a>
           </div>
         </div>
       )}
-
-      <div className="flex mt-5 lg:min-w-[300px] min-w-[250px]">
-        <button
-          onClick={() => history.push(`/request-quote`)}
-          className="flex items-center duration-500 justify-center w-1/2 h-10 rounded-l-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
-        >
-          Request a Quote
-        </button>
-        <button
-          onClick={() => history.push(`/contact`)}
-          className="flex items-center duration-500 justify-center w-1/2 h-10 rounded-r-full border hover:bg-red-500 border-red-500 text-red-500 hover:text-white text-sm font-bold"
-        >
-          Get Connected
-        </button>
-      </div>
 
       <div className="lg:hidden">
         <button onClick={toggleMenu}>
