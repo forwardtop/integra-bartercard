@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <div className="sm:h-full bg-cover">
-      <title>UC8</title>
+      <title>Integra BarterCard</title>
       <meta
         name="description"
         content="UC8 offers hosted IPPBX business phone systems with no upfront hardware cost, customizable voice plans, and local hosting in Australia. Request a quote today."
@@ -15,7 +15,6 @@ export default function Hero() {
       <div
         className="lg:px-16 min-h-[1000px] lg:min-h-[800px]"
         style={{
-          position: "relative",
           background:
             "url(/images/telechargementIcon.png) no-repeat bottom center, linear-gradient(to bottom, #87acc7 42%, #e9f2f6 95%)",
           backgroundRepeat: "no-repeat",
@@ -30,7 +29,7 @@ export default function Hero() {
               Hosted <span className="text-red-500">IPPBX</span>
               <br></br> Business Phone Systems
             </h1>
-            <div className="relative rounded-full px-3 py-3 text-2xl leading-10 text-red-500 font-bradhitc">
+            <div className="rounded-full px-3 py-3 text-2xl leading-10 text-red-500 font-bradhitc">
               “Future Technology Today”
             </div>
             <p className="text-xl leading-10 text-white">

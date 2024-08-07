@@ -2,9 +2,9 @@ import React from "react";
 import { HiPlay, HiUser } from "react-icons/hi";
 import { FaBookOpen } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
-import BarterCardMenu from "./menu";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import LogoImage from "./../assets/logo.png";
+import DropdownMenu from "./menu";
 const Header = () => {
   const location = useLocation();
 
@@ -88,7 +88,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <BarterCardMenu />
+      <DropdownMenu />
     </header>
   );
 };

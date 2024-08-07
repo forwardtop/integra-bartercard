@@ -25,7 +25,7 @@ const BreadCrumbsBar = () => {
     <div className="flex justify-center items-center h-12 border border-solid border-b-gray-300 border-t-gray-300 bg-[#87acc7]">
       <div className="w-2/3">
         <Breadcrumbs className="text-white space-x-3">
-            <a href="/" className="flex items-center justify-between space-x-3 text-white hover:text-red-500 duration-300">
+            <a href="/" className="flex items-center justify-between space-x-3 text-white hover:text-red-500 duration-300 hover:bg-transparent">
               <svg
                 xmlns="https://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -38,7 +38,7 @@ const BreadCrumbsBar = () => {
             </a>
             {pathnames.map((name, index) => (
               <span key={name} >
-                <a href={`/${pathnames.slice(0, index + 1).join("/")}`} className="text-white hover:text-red-500 duration-300">
+                <a href={`/${pathnames.slice(0, index + 1).join("/")}`} className="text-white hover:text-red-500 duration-300 hover:bg-transparent">
                   {pageNames[name] || name}
                 </a>
               </span>
