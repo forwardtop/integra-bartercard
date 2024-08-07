@@ -7,7 +7,9 @@ const BarterCard = () => {
       {/* Title Section */}
       <div className="flex items-end mb-8">
         <img src={logoSrc} alt="Logo" className="w-36 mr-4" />
-        <h1 className="text-3xl font-bold text-black"> | Program Details</h1>
+        <h1 className="text-3xl font-bold text-[#444444de]">
+          | Program Details
+        </h1>
       </div>
 
       <div className="bg-white p-6 shadow-lg rounded-lg">
@@ -15,7 +17,7 @@ const BarterCard = () => {
           How to Use Your Bartercard Digital Currency
         </h2>
 
-        <ol className="list-decimal pl-5 space-y-4 text-base leading-6">
+        <ol className="list-decimal pl-5 space-y-4 text-gray-700 leading-6">
           <li>
             <strong>Select Products and Services:</strong> Choose one or more
             products and services from UC8 Australia, Integra One, or Positive
@@ -42,7 +44,7 @@ const BarterCard = () => {
 
         <h2 className="text-2xl text-[#a6ce37] mt-8 mb-4">Example</h2>
         <p className="mb-4">Let’s break down the example given:</p>
-        <ul className="list-disc pl-5 space-y-2">
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
           <li>
             <strong>Selected Plan:</strong> NB504 (Internet NBN100)
           </li>
@@ -62,7 +64,7 @@ const BarterCard = () => {
         </ul>
 
         <h2 className="text-2xl text-[#a6ce37] mt-8 mb-4">How It Works</h2>
-        <ol className="list-decimal pl-5 space-y-4 text-base leading-6">
+        <ol className="list-decimal pl-5 space-y-4 text-gray-700 leading-6">
           <li>
             <strong>Initial Prepayment:</strong> You decide to commit to a
             60-month plan for the Internet NBN100 service. The monthly cost is
@@ -86,7 +88,7 @@ const BarterCard = () => {
         </ol>
 
         <h2 className="text-2xl text-[#a6ce37] mt-8 mb-4">Summary</h2>
-        <p className="text-base leading-6">
+        <p className="text-base leading-6 text-gray-700">
           This program allows you to leverage your digital currency for part of
           your payment commitment, making the initial period more affordable and
           manageable while still adhering to the agreed-upon terms for the
