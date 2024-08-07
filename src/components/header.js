@@ -1,15 +1,12 @@
 import React from "react";
-import { HiPlay, HiUser } from 'react-icons/hi';
-import { FaBookOpen } from 'react-icons/fa';
-import { useLocation, } from "react-router-dom";
-import Menu from "./menu";
+import { HiPlay, HiUser } from "react-icons/hi";
+import { FaBookOpen } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
+import BarterCardMenu from "./menu";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
+import LogoImage from "./../assets/logo.png";
 const Header = () => {
-
   const location = useLocation();
-
-
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -18,9 +15,18 @@ const Header = () => {
 
   return (
     <header className="p-4 text-gray-700 bg-white">
-      <div className="flex justify-center md:justify-end">
-        <div className="lg:flex mx-40">
-          <div className="flex space-x-3 lg:space-x-10 lg:mx-40">
+      <div className="">
+        <div className="lg:flex justify-between">
+          <div className="">
+            <a href="/" className="min-w-fit flex justify-center">
+              <img
+                className="h-20 lg:flex lg:h-20"
+                src={LogoImage}
+                alt="uc8 logo"
+              />
+            </a>
+          </div>
+          <div className="mt-5 lg:flex flex justify-center align-center lg:space-x-10 space-x-5">
             <a
               href="/"
               className={`flex items-center ${
@@ -28,11 +34,11 @@ const Header = () => {
               }`}
             >
               <HiUser
-                className="w-6 h-6 mr-2"
+                className="w-6 h-6"
                 stroke="currentColor"
                 fill="none"
                 strokeWidth="2"
-              />{" "}
+              />
               Login
             </a>
             <a
@@ -42,11 +48,11 @@ const Header = () => {
               }`}
             >
               <HiPlay
-                className="w-6 h-6 mr-2"
+                className="w-6 h-6"
                 stroke="currentColor"
                 fill="none"
                 strokeWidth="2"
-              />{" "}
+              />
               Watch Demo
             </a>
             <a
@@ -64,7 +70,7 @@ const Header = () => {
               Resources
             </a>
           </div>
-          <div>
+          <div className="">
             <div className="flex mt-5 justify-center">
               <button
                 onClick={() => history.push(`/request-quote`)}
@@ -82,7 +88,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Menu />
+      <BarterCardMenu />
     </header>
   );
 };

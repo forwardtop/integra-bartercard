@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import LogoImage from "./../assets/logo.png";
 export default function Menu() {
   const productItemsData = [
     {
@@ -10,53 +9,116 @@ export default function Menu() {
         { title: "Soft Phones", url: "soft-phones" },
         { title: "Geo Numbers", url: "geo-numbers" },
         { title: "Voice Recordings", url: "voice-recordings" },
-        { title: "National 1300/1800 ", url: "national 1300/1800" },
+        { title: "National 1300/1800", url: "national-1300-1800" },
         { title: "Hardware", url: "hardware" },
       ],
     },
     {
       title: "Internet",
-      submenu: "internet",
+      submenu: [
+        { title: "NBN", url: "nbn" },
+        { title: "LTE", url: "lte" },
+        { title: "3G/4G", url: "3g-and-4g" },
+        { title: "Private Fibre", url: "private-fibre" },
+        {
+          title: "Fibre over Fixed Wireless",
+          url: "fibre-over-fixed-wireless",
+        },
+        { title: "Hardware", url: "internet-hardware" },
+      ],
     },
     {
       title: "Mobile",
-      submenu: "mobile",
+      submenu: [
+        { title: "Phone Plans", url: "phone-plans" },
+        { title: "Mobile Data", url: "mobile-data" },
+        { title: "Hardware", url: "mobile-hardware" },
+      ],
     },
     {
       title: "Hosting",
-      submenu: "hosting",
+      submenu: [
+        { title: "Domain Name Hosting", url: "domain-name-hosting" },
+        { title: "Web Hosting", url: "web-hosting" },
+        { title: "Email Hosting", url: "email-hosting" },
+        { title: "Website Maintenance", url: "website-maintenance" },
+      ],
     },
     {
       title: "Marketing",
-      submenu: "marketing",
+      submenu: [
+        { title: "SEO", url: "seo" },
+        { title: "Social Media", url: "social-media" },
+        { title: "Video Media Packs", url: "video-media-packs" },
+        { title: "Website Development", url: "website-development" },
+        { title: "Logo Branding", url: "logo-branding" },
+      ],
     },
     {
       title: "Security",
-      submenu: "security",
+      submenu: [
+        { title: "Off-Site Back Ups", url: "off-site-backups" },
+        { title: "Alarm Systems", url: "alarm-systems" },
+        { title: "Alarm Monitoring", url: "alarm-monitoring" },
+        { title: "Video Camera System", url: "video-camera-system" },
+        { title: "AntiVirus", url: "antivirus" },
+        { title: "Switching and Routing", url: "switching-routing" },
+      ],
     },
     {
       title: "Offline Photo Copiers",
-      submenu: "offline-photo-copiers",
+      submenu: [
+        { title: "Computers", url: "computers" },
+        { title: "Notebooks", url: "notebooks" },
+        { title: "Server Computers", url: "server-computers" },
+        { title: "Printers", url: "printers" },
+        { title: "UPS", url: "ups" },
+      ],
     },
     {
       title: "Computer Hardware",
-      submenu: "computer-hardware",
+      submenu: [
+        { title: "Computers", url: "computer-hardware-computers" },
+        { title: "Notebooks", url: "computer-hardware-notebooks" },
+        { title: "Printers", url: "computer-hardware-printers" },
+      ],
     },
     {
       title: "Energy",
-      submenu: "energy",
+      submenu: [
+        { title: "Solar Systems", url: "solar-systems" },
+        { title: "Solar Battery Storage", url: "solar-battery-storage" },
+        { title: "EV Charging", url: "ev-charging" },
+        { title: "Solar Air Conditioning", url: "solar-air-conditioning" },
+      ],
     },
     {
       title: "Finance",
-      submenu: "finance",
+      submenu: [
+        { title: "Business Cash Loans", url: "business-cash-loans" },
+        { title: "Equipment Finance", url: "equipment-finance" },
+        { title: "Car Finance", url: "car-finance" },
+        { title: "Building Finance", url: "building-finance" },
+      ],
     },
     {
       title: "Networking",
-      submenu: "networking",
+      submenu: [
+        { title: "Computer Networking", url: "computer-networking" },
+        { title: "Data Cabling", url: "data-cabling" },
+        { title: "Wireless Access Points", url: "wireless-access-points" },
+        { title: "Switching and Routing", url: "networking-switching-routing" },
+      ],
     },
     {
       title: "Support",
-      submenu: "support",
+      submenu: [
+        { title: "SLA-Notebooks", url: "sla-notebooks" },
+        { title: "SLA-Workstations", url: "sla-workstations" },
+        { title: "SLA-Servers", url: "sla-servers" },
+        { title: "SLA-Printers", url: "sla-printers" },
+        { title: "SLA-Switching Routing", url: "sla-switching-routing" },
+      ],
     },
   ];
 
@@ -72,13 +134,8 @@ export default function Menu() {
   };
 
   return (
-    <div className="flex items-center">
-      <div className="w-2/12">
-        <a href="/" className="min-w-fit">
-          <img className="lg:flex lg:h-20" src={LogoImage} alt="uc8 logo" />
-        </a>
-      </div>
-      <div className="w-10/12 flex justify-center">
+    <div className="flex items-center justify-center">
+      <div className="flex justify-center">
         <div>
           <ul className="hidden lg:flex xl:space-x-8 lg:space-x-4 mt-4">
             <li className="flex justify-center items-center relative">
@@ -323,3 +380,53 @@ export default function Menu() {
     </div>
   );
 }
+// import React from "react";
+// import { ChevronUpIcon } from "@heroicons/react/24/solid";
+// import {
+//   Menu,
+//   MenuHandler,
+//   MenuList,
+//   MenuItem,
+//   Button,
+// } from "@material-tailwind/react";
+
+// export function NestedMenu() {
+//   const [openMenu, setOpenMenu] = React.useState(false);
+
+//   return (
+//     <Menu>
+//       <MenuHandler>
+//         <Button> Menu</Button>
+//       </MenuHandler>
+//       <MenuList>
+//         <MenuItem>Menu Item 1</MenuItem>
+//         <MenuItem>Menu Item 2</MenuItem>
+//         <Menu
+//           placement="right-start"
+//           open={openMenu}
+//           handler={setOpenMenu}
+//           allowHover
+//           offset={15}
+//         >
+//           <MenuHandler className="flex items-center justify-between">
+//             <MenuItem>
+//               Nested Item
+//               <ChevronUpIcon
+//                 strokeWidth={2.5}
+//                 className={`h-3.5 w-3.5 transition-transform ${
+//                   openMenu ? "rotate-90" : ""
+//                 }`}
+//               />
+//             </MenuItem>
+//           </MenuHandler>
+//           <MenuList>
+//             <MenuItem>Nested Item 1</MenuItem>
+//             <MenuItem>Nested Item 2</MenuItem>
+//             <MenuItem>Nested Item 3</MenuItem>
+//           </MenuList>
+//         </Menu>
+//         <MenuItem>Menu Item 3</MenuItem>
+//       </MenuList>
+//     </Menu>
+//   );
+// }
