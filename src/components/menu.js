@@ -4,36 +4,59 @@ import LogoImage from "./../assets/logo.png";
 export default function Menu() {
   const productItemsData = [
     {
-      title: "Cloud PBX",
-      url: "cloud",
+      title: "Phone",
+      submenu: [
+        { title: "Business Cloud PBX", url: "business-cloud-pbx" },
+        { title: "Soft Phones", url: "soft-phones" },
+        { title: "Geo Numbers", url: "geo-numbers" },
+        { title: "Voice Recordings", url: "voice-recordings" },
+        { title: "National 1300/1800 ", url: "national 1300/1800" },
+        { title: "Hardware", url: "hardware" },
+      ],
     },
     {
-      title: "Soft Phone",
-      url: "softphone",
+      title: "Internet",
+      submenu: "internet",
     },
     {
-      title: "Unified Communications",
-      url: "unifiedCommunications",
+      title: "Mobile",
+      submenu: "mobile",
     },
     {
-      title: "Team Collaboration",
-      url: "teamCollaboration",
+      title: "Hosting",
+      submenu: "hosting",
     },
     {
-      title: "Contact Centre",
-      url: "contactCentre",
+      title: "Marketing",
+      submenu: "marketing",
     },
     {
-      title: "CRM Connect",
-      url: "crm",
+      title: "Security",
+      submenu: "security",
     },
     {
-      title: "Call Recording",
-      url: "callRecording",
+      title: "Offline Photo Copiers",
+      submenu: "offline-photo-copiers",
     },
     {
-      title: "Hardware",
-      url: "hardware",
+      title: "Computer Hardware",
+      submenu: "computer-hardware",
+    },
+    {
+      title: "Energy",
+      submenu: "energy",
+    },
+    {
+      title: "Finance",
+      submenu: "finance",
+    },
+    {
+      title: "Networking",
+      submenu: "networking",
+    },
+    {
+      title: "Support",
+      submenu: "support",
     },
   ];
 
@@ -87,13 +110,12 @@ export default function Menu() {
                   </div>
                   <div className="invisible text-sm absolute z-50 flex w-48 flex-col text-gray-800 shadow-xl group-hover:visible bg-white">
                     {productItemsData.map((item, index) => (
-                      <a
+                      <p
                         key={index}
-                        href={`/products/${item.url}`}
                         className="my-2 block border-b py-1 font-semibold text-gray-500 hover:text-red-500 md:mx-2"
                       >
                         {item.title}
-                      </a>
+                      </p>
                     ))}
                   </div>
                 </div>

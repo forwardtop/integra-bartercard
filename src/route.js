@@ -14,7 +14,6 @@ import RequestQuote from "./pages/RequestQuote";
 import ProductPage from "./pages/ProductPage";
 import WatchDemoPage from "./pages/WatchDemoPage";
 import ResourcePage from "./pages/ResourcePage";
-import CloudPBXPage from "./pages/CloudPBXPage";
 import SoftPhonePage from "./pages/SoftPhonePage";
 import UnifiedCommunicationsPage from "./pages/UnifiedCommunicationsPage";
 import TeamCollaborationPage from "./pages/TeamCollaborationPage";
@@ -28,6 +27,7 @@ import FAQPage from "./pages/FAQPage";
 import OrderProcess from "./pages/OrderProcessPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import BarterCardPage from "./pages/BarterCardPage";
+import BusinessCloudPBXPage from "./pages/BusinessCloudPBXPage";
 
 const Routes = () => {
   return (
@@ -50,7 +50,10 @@ const Routes = () => {
       <Route path="/why" component={WhyPage} />
       <Route path="/faq" component={FAQPage} />
       <Route path="/solution" component={SolutionPage} />
-      <Route path="/products/cloud" component={CloudPBXPage} />
+      <Route
+        path="/products/business-cloud-pbx"
+        component={BusinessCloudPBXPage}
+      />
       <Route path="/products/softphone" component={SoftPhonePage} />
       <Route
         path="/products/unifiedCommunications"
